@@ -23,7 +23,7 @@ const router = useRouter()
             </div>
            <form action="">
                <div>
-                   <select name="" id="">
+                   <select name="" id="" className="select">
                        <option value="">Seriya nömrəsi</option>
                        <option value="">3 seriya</option>
                        <option value="">4 seriya</option>

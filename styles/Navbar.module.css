@@ -25,7 +25,7 @@ font-size: 18px;
     content: "";
     display: inline-block;
     width: 100%;
-    transform: translateX(-100%);
+    transform: translateY(-40px);
     background-color: #ffffff;
     height: 2px;
     transition: transform 0.3s;
@@ -37,12 +37,16 @@ font-size: 18px;
     width: 100%;
     background-color: #ffffff;
     height: 2px;
-    transform: translateX(100%);
+    transform: translateY(40px);
     transition: transform 0.3s;
 }
 
-.nav>ul>li:hover::after,.nav>ul>li:hover::before{
-    transform: translateX(0px);
+.nav>ul>li:hover::before{
+    transform: translateY(0px);
 }
-
+.nav>ul>li:hover::after{
+    transform: translateY(-4px);
+}
 /*  */
+
+
