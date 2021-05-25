@@ -1,0 +1,78 @@
+
+.spinner{
+    display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+top: -156px;
+}
+.spinnerParent{
+
+    width: 100%;
+    text-align: center;
+}
+.spinner::after{
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #512DAB;
+    border-color: #512DAB transparent #512DAB transparent;
+    animation: spinner 1.2s infinite;
+}
+@keyframes spinner {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+
+
+
+
+.parentelement{
+    margin-top: -100px;
+    display: flex;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    
+}
+.parentelement>div{
+    margin-bottom: 0;
+    height: 90%;
+    width: 401.4px;
+   margin-left: 18px;
+}
+/* .imageCars{
+    margin: 0;
+} */
+.content{
+    width: 401.35px;
+height: 176.71px;
+background: #017BEA;
+margin-top: -4px;
+margin-bottom: 10px;
+padding:  13px;
+}
+.content>p{
+    margin: 0;
+    font-size: 20px;
+}
+.content>h3,.content>p{
+    color: white;
+   
+}
+.content>h3{
+    margin-top: 0;
+    font-size: 24px;
+}

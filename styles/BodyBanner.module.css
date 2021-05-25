@@ -1,0 +1,49 @@
+/* .first{
+    height: 1670px;
+} */
+
+.bodyBanner{
+    
+margin-top: -130px;
+ 
+}
+.bkEffect{
+    background: url('../public/uploads/download2.png');
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+.bodyBanner>div{
+  
+   
+    padding: 0px 99px;
+    display: flex;
+   
+    flex-wrap: wrap;
+    max-width: 1560px;
+    margin: 0 auto;
+}
+
+
+.quickLink{
+
+    font-size: 24px;
+    list-style: none;
+    display: flex;
+    width: 100%;
+padding-left: 99px;
+    max-width: 1560px;
+    margin: 0 auto;
+    margin-top: 77px;
+}
+
+.quickLink>li{
+    margin-left: 7px;
+}
+
+.quickLink>li{
+    font-family: MarkPro;
+}

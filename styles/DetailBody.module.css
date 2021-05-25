@@ -1,0 +1,70 @@
+.parentElement{
+    margin-top: -98px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.parentElement>.slider>ul{
+  margin: 0;
+  padding: 33px 0;
+  list-style: none;
+  display: flex;
+}
+.parentElement>.slider>div{
+    box-shadow: 0.1px 1px 5.2px -3.5px #555;
+    background-color: #fff;
+}
+.parentElement>.slider>ul>li{
+    cursor: pointer;
+    box-shadow: 0.1px 1px 5.2px -3.5px #555;
+    background-color: #fff;
+    margin-left: 14px;
+}
+.parentElement>.slider>ul>li:first-child{
+    margin-left: 0px;
+}
+.parentElement>.content{
+    width: 673px;
+height: 693px;
+background: #F3F3F3;
+margin-left: 47px;
+padding: 59px 63px;
+}
+
+.parentElement>.content>.category{
+display: flex;
+justify-content: space-between;
+}
+.parentElement>.content>.category>h1{
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 30px;
+
+color: #000000;
+}
+
+.parentElement>.content>.text>p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    
+    color: #000000;
+}
+.contact{
+    display: flex;
+    
+}
+
+.contact>div{
+    width: 250px;
+    height: 58px;
+    background: #32BF00;
+}
+
+.contact>div:last-child{
+    background: #017BEA;
+    margin-left: 20px;
+}

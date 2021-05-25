@@ -1,0 +1,32 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+}
+
+
+@font-face{
+  src: url('../public/fonts/MarkPro-Book.otf');
+  font-family: MarkPro;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  font-family: MarkPro;
+  font-weight: 450;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.custom_wrapper{
+  padding: 0px 99px;
+  max-width: 1560px;
+  margin: 0 auto;
+}

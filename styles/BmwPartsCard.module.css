@@ -1,0 +1,31 @@
+.partCards{
+    transition: box-shadow 0.3s;
+ width: 296px;
+ height: 400px;
+ background: url('../public/uploads/Rec.png');
+ margin-left: 25px;
+ margin-top: 25px;
+position: relative;
+}
+.partCards:hover {
+    box-shadow: 0.1px 1px 5.2px -3.5px #555;
+}
+.partCards:hover.partCards>div:first-child{
+    background-color: #512DAB;
+}
+.partCards>div:first-child{
+    transition: background-color 0.3s;
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    background-color: #017BEA;
+    bottom: 21px;
+    left: 0;
+}
+.partCards>div:first-child>p{
+    margin: 7px 17px;
+    font-size: 24px;
+    color: white;
+
+}
+

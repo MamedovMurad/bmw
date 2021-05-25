@@ -1,0 +1,51 @@
+.parentEl{
+    margin-top: 60px;
+}
+.parentEl>ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.parentEl>ul>li{
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+.parentEl>ul>li:hover a::after{
+right: -90px;
+}
+
+.parentEl>ul>li>h3{
+    position: absolute;
+    top: 27px;
+left: 32px;
+    font-weight: 450;
+font-size: 36px;
+line-height: 46px;
+
+color: #FFFFFF;
+
+}
+.parentEl>ul>li>a{
+    position: absolute;
+        left: 32px;
+        bottom: 53px;
+    font-size: 24px;
+line-height: 29px;
+color: #FFFFFF;
+}
+.parentEl>ul>li>a::after{
+    transition: right .4s;
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 3px;
+    background: #F60100;
+    position: absolute;
+    top: 15px;
+    right: -60px;
+}
