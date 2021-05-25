@@ -102,7 +102,7 @@ color: #000000;
 .lastBanner{
    
     position: relative;
-    background: url('../public/uploads/footerbanner.png');
+    background: url('../public/uploads/footerBanner.png');
     height: 413px;
     width: 100%;
     background-repeat: no-repeat;
