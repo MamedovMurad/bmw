@@ -58,13 +58,14 @@ top: -156px;
 } */
 .content{
     width: 401.35px;
-height: 176.71px;
+height: 196.71px;
 background: #017BEA;
-margin-top: -4px;
+margin-top: -5px;
 margin-bottom: 10px;
 padding:  13px;
 }
 .content>p{
+  line-height: 140.7%;
     margin: 0;
     font-size: 20px;
 }
@@ -74,5 +75,6 @@ padding:  13px;
 }
 .content>h3{
     margin-top: 0;
+    margin-bottom: 9px;
     font-size: 24px;
 }

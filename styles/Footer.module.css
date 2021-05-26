@@ -14,6 +14,10 @@
     margin-left: 70px;
     margin-top: 44px;
 }
+.footerFirstLine>li>a{
+    color: white;
+    text-decoration: none;
+}
 .footerFirstLine>li:first-child{
 margin-left: 0px;
 }
