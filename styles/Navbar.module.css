@@ -18,8 +18,13 @@ font-size: 18px;
     color: white;
 } 
 .nav>ul>li{
+    transform: translateY(-12px);
     cursor: pointer;
     overflow: hidden;
+}
+.nav>ul>li>a{
+    color: #ffffff;
+    text-decoration: none;
 }
 .nav>ul>li::before{
     content: "";

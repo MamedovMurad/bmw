@@ -3,10 +3,13 @@ import Layout from '../components/Layout'
 import BodyImage from '../components/BodyImage'
 import Style from '../styles/Contact.module.css'
 import Image from 'next/image'
+import { DatePicker } from 'antd';
+
 const contact = () => {
     return (
         <Layout>
           <BodyImage/>
+          
           <div className="custom_wrapper">
             <div className={Style.container}>
             <div className={Style.containerLeft}>
@@ -44,7 +47,7 @@ const contact = () => {
                 </span>
             <span>+994 55 771 12 25</span>
         </p>
-
+       
         <p>+994 50 610 00 17</p>
 
         <p>+994 77 251 55 55</p>
