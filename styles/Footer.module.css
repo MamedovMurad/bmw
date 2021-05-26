@@ -14,10 +14,14 @@
     margin-left: 70px;
     margin-top: 44px;
 }
+@font-face{
+    src: url('../public/fonts/MarkPro-Book.otf');
+    font-family: MarkPro;
+  }
 .footerFirstLine>li>a{
     color: white;
     text-decoration: none;
-    font-family:MarkPro ;
+    font-family:MarkPro !important;
 }
 .footerFirstLine>li:first-child{
 margin-left: 0px;
