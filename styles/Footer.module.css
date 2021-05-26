@@ -17,6 +17,7 @@
 .footerFirstLine>li>a{
     color: white;
     text-decoration: none;
+    font-family:MarkPro ;
 }
 .footerFirstLine>li:first-child{
 margin-left: 0px;
