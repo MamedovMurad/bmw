@@ -2,10 +2,25 @@
     position: relative;
     width: 100%;
 }
+.activeSlider{
+    animation: mySLiderDeactive .4s forwards;
+}
+.deactiveSlider{
+    display: none;
+}
+
+@keyframes mySLiderDeactive {
+    0%   {  opacity: 0.3;  filter: brightness(40%);}
+    25%  {opacity: 0.4;   filter: brightness(60%);}
+    75%  {opacity: 0.6; filter: brightness(70%); }
+    100%{opacity: 1;filter: brightness(90%); }
+  
+  }
 .customHeader>div.sliderClick{
     height: 270px;
     display: inline-block;
 position: absolute;
+z-index: 1;
 bottom: 310px;
 left: 103px;
 display: flex;
@@ -125,4 +140,13 @@ color: #000000;
     
     color: #FFFFFF;
 }
+
+
+
+
+
+
+
+
+
 

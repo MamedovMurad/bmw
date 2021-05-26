@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Navbar = (props) => {
 
     const [context, setContext] = useContext(Context);
-  console.log(context);
+
 
 /* test */
  

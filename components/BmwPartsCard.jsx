@@ -5,7 +5,7 @@ import { Context } from "../context/Context";
 const BmwPartsCard = ({data}) => {
     const [lang, setlang] = useContext(Context);
 
-    console.log(data);
+   
     return (
         <Link href={`/product-detail/${data.id}`}>
         <a> 
