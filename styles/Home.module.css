@@ -18,10 +18,10 @@
   }
 
   @keyframes myTitle {
-    0%   {   opacity: 0;}
+    0%   {   opacity: 0; transform: translateX(30px);}
   /*   25%  {  filter: brightness(60%); width: 30%;}
     75%  { filter: brightness(70%); width: 60%;} */
-    100%{opacity: 1;}
+    100%{opacity: 1; transform: translateX(0);}
   
   }
 .customHeader>div.sliderClick{
