@@ -3,17 +3,25 @@
     width: 100%;
 }
 .activeSlider{
-    animation: mySLiderDeactive .4s forwards;
+    animation: mySLiderDeactive 0.9s forwards;
 }
 .deactiveSlider{
-    display: none;
+  display: none;
 }
 
 @keyframes mySLiderDeactive {
-    0%   {  opacity: 0.3;  filter: brightness(40%);}
-    25%  {opacity: 0.4;   filter: brightness(60%);}
-    75%  {opacity: 0.6; filter: brightness(70%); }
-    100%{opacity: 1;filter: brightness(90%); }
+    0%   {   filter: brightness(10%); width: 10%;}
+  /*   25%  {  filter: brightness(60%); width: 30%;}
+    75%  { filter: brightness(70%); width: 60%;} */
+    100%{filter: brightness(90%); width: 100%;}
+  
+  }
+
+  @keyframes myTitle {
+    0%   {   opacity: 0;}
+  /*   25%  {  filter: brightness(60%); width: 30%;}
+    75%  { filter: brightness(70%); width: 60%;} */
+    100%{opacity: 1;}
   
   }
 .customHeader>div.sliderClick{
@@ -67,12 +75,18 @@ flex-direction: column;
 }
 
 .title{
+    opacity: 0;
+    animation: myTitle 0.4s forwards;
+    animation-delay: 0.9s;
     font-weight: 450;
 font-size: 72px;
 left: 185px;
     top: 174px;
     position: absolute;
     color: white;
+}
+.deactiveTitle{
+    display: none;
 }
 
 .homeTitle{

@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { Select } from 'antd';
 function SearchComponent() {
-    const { Option } = Select;
 
 function handleChange(value) {
   console.log(`selected ${value}`);
@@ -32,40 +31,40 @@ const router = useRouter()
            <form action="">
                <div>
                {/*     <select name="" id="" className="select">
-                       <option value="">Seriya nömrəsi</option>
-                       <option value="">3 seriya</option>
-                       <option value="">4 seriya</option>
-                       <option value="">5 seriya</option>
-                       <option value="">7 seriya</option>
+                       <Select.option value="">Seriya nömrəsi</Select.option>
+                       <Select.option value="">3 seriya</Select.option>
+                       <Select.option value="">4 seriya</Select.option>
+                       <Select.option value="">5 seriya</Select.option>
+                       <Select.option value="">7 seriya</Select.option>
                    </select> */}
 
 <Select defaultValue="Seriya nömrəsi"  className={Style.CustomSelect} onChange={handleChange}>
-      <Option value="3 seriya">3 seriya</Option>
-      <Option value="4 seriya">4 seriya</Option>
-      <Option value="5 seriya">5 seriya</Option>
-      <Option value="7 seriya">7 seriya</Option>
+      <Select.Option value="3 seriya">3 seriya</Select.Option>
+      <Select.Option value="4 seriya">4 seriya</Select.Option>
+      <Select.Option value="5 seriya">5 seriya</Select.Option>
+      <Select.Option value="7 seriya">7 seriya</Select.Option>
       
 </Select>
 
                </div>
                <div>
                    {/* <select name="" id="">
-                       <option value="">Kuza nömrəsi</option>
+                       <Select.option value="">Kuza nömrəsi</Select.option>
                    </select> */}
 
 
 <Select defaultValue="Kuza nömrəsi"  className={Style.CustomSelect} onChange={handleChange}>
-      <Option value="Kuza nömrəsi">Kuza nömrəsi</Option>
+      <Select.Option value="Kuza nömrəsi">Kuza nömrəsi</Select.Option>
      
-      <Option value="Kuza nömrəsi2">yiminghe</Option>
+      <Select.Option value="Kuza nömrəsi2">yiminghe</Select.Option>
 </Select>
                </div>
                <div>
                <Select defaultValue="Kuza nömrəsi"  className={Style.CustomSelect} onChange={handleChange}>
-                <Option value="Kuza nömrəsi1">Kuza nömrəsi</Option>
-                <Option value="Kuza nömrəsi2">Kuza nömrəsi</Option>
-                <Option value="Kuza nömrəsi3">Kuza nömrəsi</Option>
-                <Option value="Kuza nömrəsi4">Kuza nömrəsi</Option>
+                <Select.Option value="Kuza nömrəsi1">Kuza nömrəsi</Select.Option>
+                <Select.Option value="Kuza nömrəsi2">Kuza nömrəsi</Select.Option>
+                <Select.Option value="Kuza nömrəsi3">Kuza nömrəsi</Select.Option>
+                <Select.Option value="Kuza nömrəsi4">Kuza nömrəsi</Select.Option>
               
             </Select>
                </div>

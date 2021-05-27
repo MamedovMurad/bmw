@@ -100,7 +100,10 @@ let nextSlider= data.data.length-1;
          <Navbar lang={lang} setlang={setlang}/>
          </div>
          <div className="custom_wrapper">
-      <h1 className={styles.title}>{data.data[slider][`title_${lang}`]}</h1>
+           {data.data.map((e,index)=>(
+            <h1 className={index==slider?styles.title:styles.deactiveTitle}>{data.data[slider][`title_${lang}`]}</h1>
+           ))}
+      
          </div>
 
          <SearchComponent/>
