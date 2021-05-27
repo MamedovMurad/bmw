@@ -3,12 +3,22 @@
     width: 100%;
 }
 .activeSlider{
+
+
     animation: mySLiderDeactive 0.9s forwards;
 }
 .deactiveSlider{
-  display: none;
+    position: absolute;
+    left: 0;
+    animation: myDeSLiderDeactive 0.9s forwards;
 }
-
+@keyframes myDeSLiderDeactive {
+    0%   { opacity: 0.7; z-index: -1; filter: brightness(60%)}
+  /*   25%  {  filter: brightness(60%); width: 30%;}
+    75%  { filter: brightness(70%); width: 60%;} */
+    100%{opacity: 0; z-index: -5; display: none;}
+  
+  }
 @keyframes mySLiderDeactive {
     0%   {   filter: brightness(10%); width: 10%;}
   /*   25%  {  filter: brightness(60%); width: 30%;}

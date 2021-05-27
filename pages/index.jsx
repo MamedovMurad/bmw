@@ -91,9 +91,11 @@ let nextSlider= data.data.length-1;
       ))}
  
     </div>
-    {data.data.map((e,index)=>(
+
+  {data.data.map((e,index)=>(
  <img  key={index} src={'https://bmwpartsbaku.az/'+e.pc_iage}  className={index==slider?styles.activeSlider:styles.deactiveSlider}/>
     ))}
+ 
      
 
          <div className={styles.CustomNav}>
