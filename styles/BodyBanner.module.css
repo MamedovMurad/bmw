@@ -5,6 +5,7 @@
 .bodyBanner{
     
 margin-top: -130px;
+margin-bottom: 50px;
  
 }
 .bkEffect{
@@ -15,6 +16,10 @@ margin-top: -130px;
     background-size: cover;
     display: flex;
     justify-content: space-between;
+}
+.bkEffect a{
+    color: #000;
+    text-decoration: none;
 }
 .bodyBanner>div{
   

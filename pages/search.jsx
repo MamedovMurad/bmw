@@ -3,14 +3,16 @@ import BmwPartsCard from '../components/BmwPartsCard'
 import BodyBanner from '../components/BodyBanner'
 import Layout from '../components/Layout'
 
-const Katalog = () => {
+const search = () => {
     return (
-      <Layout>
-       <BodyBanner/>
-
-   
-      </Layout>
+        <Layout>
+        <BodyBanner/>
+ 
+        <div className='custom_wrapper'>
+          
+        </div>
+       </Layout>
     )
 }
 
-export default Katalog
+export default search

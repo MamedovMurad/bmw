@@ -2,13 +2,15 @@ import React from 'react'
 import Style from '../styles/Car.module.css'
 import Image from 'next/image'
 const Car = ({kuza}) => {
-    
+    function image(){
+        return  `https://bmwpartsbaku.az/public/${kuza.mainimage}`
+    }
     return (
   <>
             <div>
             <div className={Style.imageCars}>
-            <Image
-                    src="/uploads/car.png"
+            <Image loader={image}
+                    src={`https://bmwpartsbaku.az/public/${kuza.mainimage}`}
                     alt="Picture of the author"
                     width={401}
                     height={201}

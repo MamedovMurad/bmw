@@ -1,14 +1,53 @@
-import React from 'react'
+import React, { useState, useEffect,useContext} from 'react';
 import Style from '../styles/SearchComponent.module.css'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { Select } from 'antd';
+import { Context } from "../context/Context";
 function SearchComponent() {
+    const [lang, setlang] = useContext(Context);
+    const [allSeria, setallSeria] = useState([]);
+    const [allCate, setallCate] = useState([]);
+    const [allkuzov, setallKuzov] = useState([]);
 
-function handleChange(value) {
-  console.log(`selected ${value}`);
+    const [search, setsearch] = useState({seria:"",kuzov:"",category:""});
+
+
+const  handleSeria = async(value)=>{
+
+    setsearch({...search,seria:value});
+    const res = await fetch(`https://bmwpartsbaku.az/api/kuzov/${value}`)
+    const product= await res.json();
+  
+    setallKuzov(product);
 }
+const handleKuza= async(value)=>{
+    setsearch({...search,kuzov:value});
+    /* console.log(`selected ${value}`); */
+  }
 
+  function handleCategory(value) {
+    setsearch({...search,category:value});
+/*     console.log(`selected ${value}`); */
+  }
+
+  const getSeria= async()=>{
+    const res = await fetch('https://bmwpartsbaku.az/public/api/seriya')
+    const product= await res.json();
+  
+    setallSeria(product);
+  }
+
+  const getCate= async()=>{
+    const res = await fetch('https://bmwpartsbaku.az/public/api/category')
+    const product= await res.json();
+  
+    setallCate(product);
+  }
+  useEffect(() => {
+    getSeria();
+    getCate();
+  }, [])
 
 const router = useRouter()
 
@@ -21,58 +60,52 @@ const router = useRouter()
         width={114}
         height={83}
       />
-         {/*    <svg width="114" height="84" viewBox="0 0 114 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 83.5L114 0.5H11C4.92487 0.5 0 5.42487 0 11.5V83.5Z" fill="#512DAB"/>
-            <path d="M0 83.5L114 0H67L0 48.5V83.5Z" fill="#F60100"/>
-            </svg> */}
+       
 
 
             </div>
            <form action="">
                <div>
-               {/*     <select name="" id="" className="select">
-                       <Select.option value="">Seriya nömrəsi</Select.option>
-                       <Select.option value="">3 seriya</Select.option>
-                       <Select.option value="">4 seriya</Select.option>
-                       <Select.option value="">5 seriya</Select.option>
-                       <Select.option value="">7 seriya</Select.option>
-                   </select> */}
+         
 
-<Select defaultValue="Seriya nömrəsi"  className={Style.CustomSelect} onChange={handleChange}>
-      <Select.Option value="3 seriya">3 seriya</Select.Option>
-      <Select.Option value="4 seriya">4 seriya</Select.Option>
-      <Select.Option value="5 seriya">5 seriya</Select.Option>
-      <Select.Option value="7 seriya">7 seriya</Select.Option>
+<Select defaultValue="Seriya nömrəsi"  className={Style.CustomSelect} onChange={handleSeria}>
+    {allSeria.map((data,index)=>(
+         <Select.Option key={index} value={data.id}>{data[`title_${lang}`]}</Select.Option>
+    ))}
+   
       
 </Select>
 
                </div>
                <div>
-                   {/* <select name="" id="">
-                       <Select.option value="">Kuza nömrəsi</Select.option>
-                   </select> */}
+                
 
 
-<Select defaultValue="Kuza nömrəsi"  className={Style.CustomSelect} onChange={handleChange}>
-      <Select.Option value="Kuza nömrəsi">Kuza nömrəsi</Select.Option>
-     
-      <Select.Option value="Kuza nömrəsi2">yiminghe</Select.Option>
+<Select defaultValue="Kuza nömrəsi"  className={Style.CustomSelect} onChange={handleKuza}>
+ 
+     {allkuzov.map((data,index)=>(
+  <Select.Option key={index} value={data.id}>{data.title}</Select.Option>
+     ))}
+    
 </Select>
                </div>
                <div>
-               <Select defaultValue="Kuza nömrəsi"  className={Style.CustomSelect} onChange={handleChange}>
-                <Select.Option value="Kuza nömrəsi1">Kuza nömrəsi</Select.Option>
-                <Select.Option value="Kuza nömrəsi2">Kuza nömrəsi</Select.Option>
+               <Select defaultValue="Kateqoriya"  className={Style.CustomSelect} onChange={handleCategory}>
+                   {allCate.map((data,index)=>(
+          <Select.Option key={index} value={data.id}>{data[`title_${lang}`]}</Select.Option>
+                   ))}
+      
+             {/*    <Select.Option value="Kuza nömrəsi2">Kuza nömrəsi</Select.Option>
                 <Select.Option value="Kuza nömrəsi3">Kuza nömrəsi</Select.Option>
-                <Select.Option value="Kuza nömrəsi4">Kuza nömrəsi</Select.Option>
+                <Select.Option value="Kuza nömrəsi4">Kuza nömrəsi</Select.Option> */}
               
             </Select>
                </div>
                <div>
                   <button type="button" onClick={()=>{
                       router.push({
-                          pathname:'/Katalog',
-                          query:{q:'5',gg:'99'},
+                          pathname:'/search',
+                          query:{seriya_id:search.seria,category_id:search.category,kuzov_id:search.kuzov},
                           
                       })
                   }}>

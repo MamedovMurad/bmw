@@ -17,7 +17,6 @@ const Home=(data) =>{
   const [fivetSeria, setfiveSeria] = useState([])
   const [sevenSeria, setsevenSeria] = useState([])
 
-
 const getthirdSeria= async()=>{
   const res = await fetch('https://bmwpartsbaku.az/public/api/products/seriya/1')
   const product= await res.json();
@@ -103,7 +102,7 @@ let nextSlider= data.data.length-1;
          </div>
          <div className="custom_wrapper">
            {data.data.map((e,index)=>(
-            <h1 className={index==slider?styles.title:styles.deactiveTitle}>{data.data[slider][`title_${lang}`]}</h1>
+            <h1 key={index} className={index==slider?styles.title:styles.deactiveTitle}>{data.data[slider][`title_${lang}`]}</h1>
            ))}
       
          </div>
@@ -136,7 +135,7 @@ let nextSlider= data.data.length-1;
     </h3>
 
     <div className={styles.LinkHome}>
-               <Link href="/Katalog">
+               <Link href={{ pathname: '/search', query: { seriya_id:1 } }}>
                   <a>Hamsına bax</a>
                   </Link>
     </div>
