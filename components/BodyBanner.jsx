@@ -8,7 +8,7 @@ const BodyBanner = () => {
     const router = useRouter()
 
 const [products, setproducts] = useState([])
-
+const [spin, setspin] = useState(0)
 
 function isEmpty(obj) {
     for(var key in obj) {
@@ -26,6 +26,7 @@ console.log(router.query);
             const  url=`https://bmwpartsbaku.az/api/search?category_id=${router.query.category_id}&kuzov_id=${router.query.kuzov_id}&seriya_id=${router.query.seriya_id}`
             const res = await fetch(url);           
             const product= await res.json();
+            setspin(1);
             setproducts(product);
         },[router.query]) 
         }else{
@@ -33,6 +34,7 @@ console.log(router.query);
                 const   url=`https://bmwpartsbaku.az/api/search?category_id=&kuzov_id=&seriya_id=`
                 const res = await fetch(url);           
                 const product= await res.json();
+                setspin(1);
                 setproducts(product);
             },[router.query]) 
 
@@ -47,7 +49,7 @@ console.log(router.query);
 <div className={Style.bodyBanner}>
         
             <div>
-                {products.length<1?
+                {spin==0?
              <>  <div style={{width:'290px',marginRight:'20px'}}> <Skeleton active  /> </div>
                <div style={{width:'290px',marginRight:'20px'}}> <Skeleton active  /> </div>
                <div style={{width:'290px',marginRight:'20px'}}> <Skeleton active  /> </div> 
