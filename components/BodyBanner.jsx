@@ -3,7 +3,7 @@ import Style from '../styles/BodyBanner.module.css'
 import BmwPartsCard from './BmwPartsCard'
 import BodyImage from './BodyImage'
 import { useRouter } from 'next/router'
-import { Skeleton } from 'antd';
+import { Skeleton ,Empty} from 'antd';
 const BodyBanner = () => {
     const router = useRouter()
 
@@ -57,7 +57,8 @@ console.log(router.query);
                <div style={{width:'290px',marginRight:'20px'}}> <Skeleton active  /> </div>
                <div style={{width:'290px',marginRight:'20px'}}> <Skeleton active  /> </div>
                <div style={{width:'290px',marginRight:'20px'}}> <Skeleton active  /> </div>
-               <div style={{width:'290px'}}> <Skeleton active  /> </div></>:
+               <div style={{width:'290px'}}> <Skeleton active  /> </div></>:products.length<1?
+              <div style={{width:'100%'}}> <Empty description={false} /></div>:
                  products.map((e,index)=>(
                 <BmwPartsCard key={index} data={e}/>
            ))}
