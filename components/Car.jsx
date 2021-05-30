@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import Style from '../styles/Car.module.css'
 import Image from 'next/image'
 const Car = ({kuza}) => {
@@ -9,11 +9,14 @@ const Car = ({kuza}) => {
   <>
             <div>
             <div className={Style.imageCars}>
-            <Image loader={image}
+            <Image loader={image} 
                     src={`https://bmwpartsbaku.az/public/${kuza.mainimage}`}
                     alt="Picture of the author"
-                    width={401}
                     height={201}
+                    width={401}
+                   
+                    objectFit="cover"
+                  
                 />
             </div>
 

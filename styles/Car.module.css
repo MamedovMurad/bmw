@@ -53,9 +53,10 @@ top: -156px;
     width: 401.4px;
    margin-left: 18px;
 }
-/* .imageCars{
-    margin: 0;
-} */
+ .imageCars{
+  width:401px;
+  height:201px;
+} 
 .content{
     width: 401.35px;
 height: 196.71px;
