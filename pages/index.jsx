@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Footer from '../components/footer'
 import HomeWrapper from '../components/HomeWrapper'
 import Link from 'next/link'
@@ -198,11 +199,26 @@ let nextSlider= data.data.length-1;
 
 
 <div className={styles.lastBanner}>
- 
+ <p>
+ Sifariş etmək istəyirsiniz? <br/>
+  Bizimlə əlaqə saxlayın
+ </p>
    <div className={styles.lastBannerLink}>
-   <Link href="/contact">
+                <Link href="/contact">
                   <a>Əlaqə</a>
                   </Link>
+   </div>
+
+   <div className={styles.animeWp}>
+   <Image 
+                    src="/uploads/whatsapp.svg"
+                    alt="contact"
+                    height={44}
+                    width={44}
+                   
+                    objectFit="cover"
+                  
+                />
    </div>
    <div>
   {/*    <span>

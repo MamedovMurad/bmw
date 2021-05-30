@@ -1,7 +1,5 @@
 import React, { useState ,useContext} from 'react';
 import Style from '../styles/DetailBody.module.css'
-import Image from 'next/image'
-import imgix from '../next.config'
 import { Context } from "../context/Context";
 const DetailBody = ({data}) => {
     const [context, setContext] = useContext(Context);

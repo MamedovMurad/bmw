@@ -141,10 +141,35 @@ color: #000000;
 .categories{
     margin-top: -200px;
 }
+.lastBanner:hover .animeWp{
+right: 0;
+}
+.lastBanner>.animeWp{
+    transition: right .4s;
+    position: absolute;
+    right: -300px;
+    bottom: 54px;
+    padding: 15px;
+    width: 226px;
+    background: #512DAB;
+}
+
+.lastBanner>p{
+    position: absolute;
+    top: 55px;
+    left: 96px;
+    font-family: MarkPro;
+font-style: normal;
+font-weight: 450;
+font-size: 72px;
+line-height: 91px;
+
+color: #FFFFFF;
+}
 .lastBanner{
-   
+   overflow: hidden;
     position: relative;
-    background: url('../public/uploads/footere.png');
+    background: url('../public/uploads/footere.jpg');
     height: 413px;
     width: 100%;
     background-repeat: no-repeat;
