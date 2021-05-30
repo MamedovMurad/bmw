@@ -135,7 +135,7 @@ let nextSlider= data.data.length-1;
     </h3>
 
     <div className={styles.LinkHome}>
-               <Link href={{ pathname: '/search', query: { seriya_id:1 } }}>
+    <Link href={{ pathname: '/search', query: { seriya_id:1 ,category_id:"",kuzov_id:""} }}>
                   <a>Hamsına bax</a>
                   </Link>
     </div>
@@ -177,7 +177,7 @@ let nextSlider= data.data.length-1;
     </h3>
 
     <div className={styles.LinkHome}>
-               <Link href="/Katalog">
+    <Link href={{ pathname: '/search', query: { seriya_id:3 ,category_id:"",kuzov_id:""} }}>
                   <a>Hamsına bax</a>
                   </Link>
     </div>
@@ -237,7 +237,7 @@ let nextSlider= data.data.length-1;
     </h3>
 
     <div className={styles.LinkHome}>
-               <Link href="/Katalog">
+    <Link href={{ pathname: '/search', query: { seriya_id:4 ,category_id:"",kuzov_id:""} }}>
                   <a>Hamsına bax</a>
                   </Link>
     </div>

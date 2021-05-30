@@ -1,4 +1,4 @@
-import React, { lazy } from 'react'
+import React from 'react'
 import Style from '../styles/Car.module.css'
 import Image from 'next/image'
 const Car = ({kuza}) => {
