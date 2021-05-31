@@ -37,7 +37,7 @@ const Navbar = (props) => {
             <div>
                 <Link href="/">
               <a>   <Image
-                    src="/uploads/logo.png"
+                    src="/uploads/logocustom.png"
                     alt="Picture of the author"
                     width={211}
                     height={60}
