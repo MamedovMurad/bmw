@@ -9,10 +9,12 @@ const BmwPartsCard = ({data}) => {
     return (
         <Link href={`/product-detail/${data.id}`}>
         <a> 
-        <div className={Style.partCards} style={{background:`url(https://bmwpartsbaku.az/public/${data.mainimage})`}}>
-   
+        <div className={Style.partCards} >
+        <div style={{background:`url(https://bmwpartsbaku.az/public/${data.mainimage})`}}>
+            
+        </div>
                      <div>
-    <p>{data[`title_${lang}`]}</p>
+                <p>{data[`title_${lang}`]}</p>
                 <p>{data.price} AZN</p>
                     </div>   
         </div>

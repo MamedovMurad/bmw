@@ -1,7 +1,8 @@
 .nav{
+    background-color: rgb(7 5 5 / 56%);
    display: flex;
    justify-content: space-between;
-   padding: 22px 60px;
+   padding: 22px 60px 0px 60px;
 }
 
 .nav>ul:first-child{
@@ -46,11 +47,31 @@ font-size: 18px;
     transition: transform 0.3s;
 }
 
+
 .nav>ul>li:hover::before{
     transform: translateY(0px);
 }
 .nav>ul>li:hover::after{
     transform: translateY(-4px);
+}
+.nav>ul>li.activeNav::before{
+    transform: translateY(0px);
+}
+.nav>ul>li.activeNav::after{
+    transform: translateY(-4px);
+}
+
+.lang{
+    position: relative;
+}
+.lang:hover li:last-child{
+    height: 100%;
+}
+.lang>li:last-child{
+    height: 0;
+    position: absolute;
+    bottom: -80px;
+    
 }
 /*  */
 

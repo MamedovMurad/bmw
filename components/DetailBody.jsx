@@ -4,8 +4,13 @@ import { Context } from "../context/Context";
 const DetailBody = ({data}) => {
     const [context, setContext] = useContext(Context);
 const [slider, setSlider] = useState(`https://bmwpartsbaku.az/${data.mainimage}`)
-function image(){
-    return  slider
+const status={
+    status_good_az:'Əla',
+    status_good_ru:'отлично',
+    status_normal_ru:'хорошо',
+    status_normal_az:'Yaxşı',
+    status_bad_az:'Kafi',
+    status_bad_ru:'достаточно',
 }
     return (
         <div className='custom_wrapper'>
@@ -44,7 +49,7 @@ function image(){
                     </div>
                     <div>
                         <h4>Kateqoriya: {data[`category_${context}`]}</h4>
-                        <h4>Vəziyyəti: {data[`status`]}</h4>
+                        <h4>Vəziyyəti: <span style={{color: data.status=='ugly'? '#F60100':data.status=='bad'?'#F60100':'#32BF00'}}>{data.status=='ugly'?status[`status_bad_${context}`]:data.status=='bad'?status[`status_good_${context}`]:status[`status_good_${context}`]}</span></h4>
                     </div>
                 </div>
 

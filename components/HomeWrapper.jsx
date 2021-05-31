@@ -28,7 +28,12 @@ const HomeWrapper = () => {
                             width={611}
                             height={234}
                         />
-                        <h3>{data[`title_${lang}`]}</h3>
+                        <h3>
+                        <Link href={{ pathname: '/search', query: { seriya_id:data.id ,category_id:"",kuzov_id:""} }}>
+                        <a>{data[`title_${lang}`]}</a>
+                        </Link>
+                            
+                            </h3>
                         <Link href={{ pathname: '/search', query: { seriya_id:data.id ,category_id:"",kuzov_id:""} }}>
                         <a>Hamsına bax</a>
                         </Link>

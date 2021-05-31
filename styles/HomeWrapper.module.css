@@ -9,8 +9,25 @@
     justify-content: center;
     list-style: none;
 }
-
+.parentEl>ul>li:hover::after{
+    width: 100%;
+}
+.parentEl>ul>li::after{
+    transition: width .4s;
+   content: "";
+   position: absolute;
+   display: inline-block;
+   width: 0%;
+   height: 98.5%;
+   top: 0;
+   left: 0;
+   background-color: rgba(27, 18, 18, 0.308);
+}
+.parentEl>ul>li>h3>a{
+    color:white;
+}
 .parentEl>ul>li{
+
     margin-left: 20px;
     margin-top: 20px;
     position: relative;
