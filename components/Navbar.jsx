@@ -41,6 +41,7 @@ const Navbar = (props) => {
                     alt="Picture of the author"
                     width={211}
                     height={60}
+                    objectFit='contain'
                 /></a>
                 </Link>
                 </div>
