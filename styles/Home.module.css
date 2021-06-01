@@ -136,7 +136,7 @@ color: #000000;
     height: 390px;
     background-size: cover !important;
    background-repeat: no-repeat !important;
-    background: url('../public/uploads/down.png');
+    background: url('../public/uploads/down.jpg');
 }
 .categories{
     margin-top: -200px;
@@ -169,7 +169,7 @@ color: #FFFFFF;
 .lastBanner{
    overflow: hidden;
     position: relative;
-    background: url('../public/uploads/footere.jpg');
+    background: url('../public/uploads/altban.jpg');
     height: 413px;
     width: 100%;
     background-repeat: no-repeat;
