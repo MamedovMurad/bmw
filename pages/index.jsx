@@ -93,7 +93,8 @@ let nextSlider= data.data.length-1;
     </div>
 
   {data.data.map((e,index)=>(
- <img  key={index} src={'https://bmwpartsbaku.az/'+e.pc_iage}  className={index==slider?styles.activeSlider:styles.deactiveSlider}/>
+ <img  key={index} src={'https://bmwpartsbaku.az/'+e.pc_iage}  
+ className={index==slider?styles.activeSlider:styles.deactiveSlider}/>
     ))}
  
      
@@ -103,9 +104,17 @@ let nextSlider= data.data.length-1;
          </div>
          <div className="custom_wrapper">
            {data.data.map((e,index)=>(
-            <h1 key={index} className={index==slider?styles.title:styles.deactiveTitle}>{data.data[slider][`title_${lang}`]}</h1>
+            <h1 key={index}
+             className={index==slider?styles.title:styles.deactiveTitle}>
+               {data.data[slider][`title_${lang}`]}
+               </h1>
+
            ))}
-      
+        <div className={styles.sliderToCatalog}>
+          <Link href="/Katalog">
+            <a >Kataloq</a>
+          </Link>
+        </div>
          </div>
 
          <SearchComponent/>
@@ -167,7 +176,7 @@ let nextSlider= data.data.length-1;
       </svg>
       </span>
 
-      <span>BMW 5-ciseriya</span>
+      <span>BMW 5-ci seriya</span>
 
       <span><svg width="65" height="31" viewBox="0 0 65 31" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M16 0H33L16 31H0L16 0Z" fill="#017BEA"/>

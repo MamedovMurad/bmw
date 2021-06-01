@@ -92,7 +92,7 @@ flex-direction: column;
     font-weight: 450;
 font-size: 72px;
 left: 185px;
-    top: 174px;
+    top: 160px;
     position: absolute;
     color: white;
 }
@@ -193,12 +193,36 @@ color: #FFFFFF;
     color: #FFFFFF;
 }
 
+.sliderToCatalog:hover::after{
+    right: -75px;
+}
+.sliderToCatalog{
+    position: absolute;
+    bottom: 275px;
+    left: 189px;
 
+z-index: 1;
+}
+.sliderToCatalog::after{
+    transition: all .4s;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background: #017BEA;
+    right: -52px;
+    top: 54%;
+    z-index: -1;
+}
+.sliderToCatalog>a{
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+color: #FFFFFF;
 
-
-
-
-
+}
 
 
 

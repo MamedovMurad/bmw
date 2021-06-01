@@ -1,5 +1,8 @@
 .nav{
-    background-color: rgb(7 5 5 / 56%);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background-color: rgb(7 5 5 / 76%);
    display: flex;
    justify-content: space-between;
    padding: 22px 60px 0px 60px;
@@ -62,14 +65,21 @@ font-size: 18px;
 }
 
 .lang{
+    width: 60px;
+    justify-content: space-between;
+    display: flex;
     position: relative;
 }
 .lang:hover li:last-child{
+  
     height: 100%;
 }
+
 .lang>li:last-child{
+    
+
     height: 0;
-    position: absolute;
+
     bottom: -80px;
     
 }

@@ -8,14 +8,14 @@ const BmwPartsCard = ({data}) => {
    
     return (
         <Link href={`/product-detail/${data.id}`}>
-        <a> 
+        <a className={Style.links}> 
         <div className={Style.partCards} >
         <div style={{background:`url(https://bmwpartsbaku.az/public/${data.mainimage})`}}>
             
         </div>
                      <div>
                 <p>{data[`title_${lang}`]}</p>
-                <p>{data.price} AZN</p>
+                <p>{data.price} ₼</p>
                     </div>   
         </div>
         </a>

@@ -10,6 +10,10 @@
     list-style: none;
 
 }
+.footerFirstLine>li>a,.footerFirstLine>li>span{
+    display: inline-block;
+    margin-left: 8px;
+}
 .footerFirstLine>li{
     margin-left: 70px;
     margin-top: 44px;

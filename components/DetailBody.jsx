@@ -49,7 +49,7 @@ const status={
                     </div>
                     <div>
                         <h4>Kateqoriya: {data[`category_${context}`]}</h4>
-                        <h4>Vəziyyəti: <span style={{color: data.status=='ugly'? '#F60100':data.status=='bad'?'#F60100':'#32BF00'}}>{data.status=='ugly'?status[`status_bad_${context}`]:data.status=='bad'?status[`status_good_${context}`]:status[`status_good_${context}`]}</span></h4>
+                        <h4>Vəziyyəti: <span style={{color: data.status=='ugly'? '#F60100':data.status=='bad'?'#FFAD36':'#32BF00'}}>{data.status=='ugly'?status[`status_bad_${context}`]:data.status=='bad'?status[`status_normal_${context}`]:status[`status_good_${context}`]}</span></h4>
                     </div>
                 </div>
 
@@ -57,8 +57,8 @@ const status={
                     <p>{data[`desc_${context}`]}</p>
                 </div>
                 <div className={Style.contact}>
-                    <div><a>WhatsApp-la sifariş</a></div>
-                    <div><a>Zəng et</a></div>
+                    <div><a> <img src="../uploads/whatsapp.svg" alt="" width="27"/>  WhatsApp-la sifariş</a></div>
+                    <div><a> <img src="../uploads/call.svg" alt=""/> Zəng et</a></div>
                 </div>
             </div>
           </div>
