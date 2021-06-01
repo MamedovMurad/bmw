@@ -136,7 +136,7 @@ color: #000000;
     height: 390px;
     background-size: cover !important;
    background-repeat: no-repeat !important;
-    background: url('../public/uploads/down.png');
+    background: url('../public/uploads/down.jpg');
 }
 .categories{
     margin-top: -200px;
