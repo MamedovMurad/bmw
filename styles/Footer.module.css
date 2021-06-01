@@ -15,13 +15,13 @@
     margin-top: 44px;
 }
 @font-face{
-    src: url('../public/fonts/main.otf');
+    src: url('../public/fonts/markprom.otf');
     font-family: MarkPro;
   }
 .footerFirstLine>li>a{
     color: white;
     text-decoration: none;
-    font-family:MarkPro !important;
+    font-family:MarkPro;
 }
 .footerFirstLine>li:first-child{
 margin-left: 0px;
