@@ -21,12 +21,12 @@ const HomeWrapper = () => {
             <div className={Style.parentEl}>
                 <ul>
                     {allSeria.map((data,index)=>(
-                            <li key={index}>
+                            <li key={index} style={{width:"45%", height:'234px'}}>
                             <Image
                             src={`/uploads/categ${index+1}.png`}
                             alt="Picture of the author"
-                            width={611}
-                            height={234}
+                            layout="fill"
+                            objectFit="cover"
                         />
                         <h3>
                         <Link href={{ pathname: '/search', query: { seriya_id:data.id ,category_id:"",kuzov_id:""} }}>

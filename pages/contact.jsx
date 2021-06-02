@@ -8,7 +8,7 @@ import { DatePicker } from 'antd';
 const contact = () => {
     return (
         <Layout>
-          <BodyImage/>
+          <BodyImage title="Əlaqə"/>
           
           <div className="custom_wrapper">
             <div className={Style.container}>

@@ -8,7 +8,7 @@ const Detail = ({data}) => {
 const [state, setstate] = useState(router.id)
     return (
       <Layout>
-          <BodyImage />
+          <BodyImage title={data.title_az}/>
             <DetailBody data={data}/>
       </Layout>
 

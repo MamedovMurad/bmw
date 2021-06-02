@@ -49,7 +49,9 @@ div.ant-select-selector{
 
 
 
-
+.ant-modal-body{
+  padding: 0px !important;
+}
 
 
 

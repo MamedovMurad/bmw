@@ -5,7 +5,7 @@
     background-color: rgb(7 5 5 / 76%);
    display: flex;
    justify-content: space-between;
-   padding: 22px 60px 0px 60px;
+   padding:5px 60px 0px 60px;
 }
 
 .nav>ul:first-child{
@@ -70,15 +70,11 @@ font-size: 18px;
     display: flex;
     position: relative;
 }
-.lang:hover li:last-child{
-  
-    height: 100%;
-}
 
 .lang>li:last-child{
     
 
-    height: 0;
+    height: 100%;
 
     bottom: -80px;
     
