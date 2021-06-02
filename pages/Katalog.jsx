@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 const Katalog = () => {
     return (
       <Layout>
-       <BodyBanner/>
+       <BodyBanner title="Kataloqlar"/>
 
    
       </Layout>
