@@ -1,6 +1,6 @@
 @font-face{
-    src: url('../public/fonts/markprom.otf');
-    font-family: MarkPro;
+    src: url('../public/fonts/GilroyRegular.otf');
+    font-family: MarkRegular;
   }
 
 .parentElement{
@@ -19,7 +19,7 @@
 }
 .parentElement>.slider>div>img{
     height: 500px;
-    object-fit: contain;
+    object-fit: cover;
     width: 520px;
 }
 .parentElement>.slider>div{
@@ -29,7 +29,7 @@
 .parentElement>.slider>ul>li>img{
     width: 163px;
     height: 157px;
-    object-fit: contain;
+    object-fit: cover;
 }
 .parentElement>.slider>ul>li{
     cursor: pointer;
@@ -39,6 +39,10 @@
 }
 .parentElement>.slider>ul>li:first-child{
     margin-left: 0px;
+}
+.parentElement>.content>h1{
+
+    font-family: MarkPro;
 }
 .parentElement>.content{
     width: 673px;
@@ -53,15 +57,17 @@ display: flex;
 justify-content: space-between;
 }
 .parentElement>.content>h1>span:first-child{
-    font-family: MarkPro;
+ 
+   
     font-style: normal;
     font-weight: 450;
-    font-size: 64px;
+    font-size: 48px;
     line-height: 81px;
     margin-right: 10px;
     color: #F60100;
 }
 .parentElement>.content>.category>div>h4{
+    font-family: MarkRegular;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -71,9 +77,11 @@ color: #000000;
 }
 
 .parentElement>.content>.text{
+    font-family: MarkRegular;
     margin: 40px 0;
 }
 .parentElement>.content>.text>p{
+    font-family: MarkRegular;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;

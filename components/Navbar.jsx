@@ -64,7 +64,7 @@ const Navbar = (props) => {
                 <li className={router.pathname=='/nece-almaq'?style.activeNav:""}>
                 <Link href="/nece-almaq">
            
-                {context=='az'? <a>Necə almaq</a> : <a>     Как купить</a>}
+                {context=='az'? <a>Necə almaq olar?</a> : <a>     Как купить ?</a>}
                 
                 </Link>
                 </li>

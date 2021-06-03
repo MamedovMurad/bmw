@@ -45,7 +45,7 @@ console.log(router.query);
     return (
 <div className={Style.first}>
     
-    <BodyImage title="Kataloqlar"/>
+    <BodyImage title="Kataloq"/>
 <div className={Style.bodyBanner}>
         
             <div>

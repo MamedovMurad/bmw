@@ -19,13 +19,14 @@
     margin-top: 44px;
 }
 @font-face{
-    src: url('../public/fonts/markprom.otf');
-    font-family: MarkPro;
+    src: url('../public/fonts/GilroyRegular.otf');
+    font-family: MarkRegular;
   }
-.footerFirstLine>li>a{
+.footerFirstLine>li>a,.footerFirstLine>li>span{
+    font-size: 17px;
     color: white;
     text-decoration: none;
-    font-family:MarkPro;
+    font-family:MarkRegular;
 }
 .footerFirstLine>li:first-child{
 margin-left: 0px;

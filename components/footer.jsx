@@ -43,10 +43,10 @@ const Footer = () => {
                 <img src="../uploads/Call.svg" alt="" width="19"/>  <a href="+994 55 771 12 25">+994 55 771 12 25</a> 
                 </li>
                 <li>
-                <a href="tel:+994 50 610 00 17">+994 50 610 00 17</a>
+                <img src="../uploads/Call.svg" alt="" width="19"/> <a href="tel:+994 50 610 00 17">+994 50 610 00 17</a>
                 </li>
                 <li>
-                <a href="tel:+994 77 251 55 55">+994 77 251 55 55</a>
+                <img src="../uploads/Call.svg" alt="" width="19"/> <a href="tel:+994 77 251 55 55">+994 77 251 55 55</a>
                 </li>
                 <li>
           <img src="../uploads/Location.svg" alt=""/> <span>Bakı şəh., Babək prs. 74</span> 

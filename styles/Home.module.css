@@ -85,7 +85,8 @@ flex-direction: column;
 }
 
 .title{
-    width: 635px;
+    font-family: MarkPro;
+    width: 655px;
     opacity: 0;
     animation: myTitle 0.4s forwards;
     animation-delay: 0.9s;
@@ -118,11 +119,18 @@ color: #000000;
 .LinkHome{
     text-align: right;
 }
+.LinkHome>a:hover{
+    background-color: #512DAB;
+}
 .LinkHome>a{
+    transition: 0.3s all;
+    background-color: #214C94;
+    padding: 8px 20px;
+    color: #FFFFFF;
     font-size: 24px;
     line-height: 30px;
     
-    color: #343333; 
+
 }
 .katalogParent{
     
@@ -142,9 +150,18 @@ color: #000000;
     margin-top: -200px;
 }
 .lastBanner:hover .animeWp{
+
 right: 0;
 }
+.lastBanner>.animeWp>a{
+color: #FFFFFF;
+font-size: 18px;
+}
 .lastBanner>.animeWp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
     transition: right .4s;
     position: absolute;
     right: -300px;

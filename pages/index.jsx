@@ -104,10 +104,16 @@ let nextSlider= data.data.length-1;
          </div>
          <div className="custom_wrapper">
            {data.data.map((e,index)=>(
-            <h1 key={index}
+             
+             <Link href="Katalog">
+             <a >
+             <h1 key={index}
              className={index==slider?styles.title:styles.deactiveTitle}>
                {data.data[slider][`title_${lang}`]}
                </h1>
+             </a>
+             </Link>
+           
 
            ))}
         <div className={styles.sliderToCatalog}>
@@ -228,6 +234,8 @@ let nextSlider= data.data.length-1;
                     objectFit="cover"
                   
                 />
+
+                <a href="https://wa.me/+994506100017">(050) 610-00-17</a>
    </div>
    <div>
   {/*    <span>

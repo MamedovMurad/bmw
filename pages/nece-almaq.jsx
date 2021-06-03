@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 const NeceAlmaq = () => {
     return (
         <Layout>
-             <BodyImage title="Necə almaq"/>
+             <BodyImage title="Necə almaq olar?"/>
              <HowToBuy/>
         </Layout>
     )

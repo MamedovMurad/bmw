@@ -7,11 +7,13 @@ body {
 
 
 @font-face{
-  src: url('../public/fonts/markprom.otf');
+  src: url('../public/fonts/GilroyMedium.otf');
   font-family: MarkPro;
 }
 
-
+h3{
+  font-family: MarkPro !important;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -31,7 +33,9 @@ a {
   margin: 0 auto;
 }
 
-
+.ant-select-selection-item{
+  font-family: MarkPro !important;
+}
 
 div.ant-select-selector{
   height: 59px !important;

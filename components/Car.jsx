@@ -19,8 +19,8 @@ const Car = ({kuza,setvis,setModalIndex, index}) => {
                     src={`https://bmwpartsbaku.az/public/${kuza.mainimage}`}
                     alt="Picture of the author"
                     height='201'
-                    width="401"
-                   style={{ objectFit:"cover"}}
+                    width= "350.35"
+                   style={{ objectFit:"cover", borderRadius:"4px 4px 0 0"}}
                    
                   
                 />
@@ -29,10 +29,10 @@ const Car = ({kuza,setvis,setModalIndex, index}) => {
 
             <div className={Style.content}>
           <h3>{kuza.model}</h3>
-                <p>Kuza nömrəsi:  {kuza.model}</p>
-                <p>İli: {kuza.year}</p>
-                <p>Alınma tarixi: {moment(kuza.purchase_date).format('LL') } </p>
-                <p>Hansı ölkədən gətirilib: {kuza.country}</p>
+             {/*    <p>Kuza nömrəsi:  {kuza.model}</p> */}
+                <p>{kuza.year}</p>
+            {/*     <p>Alınma tarixi: {moment(kuza.purchase_date).format('LL') } </p>
+                <p>Hansı ölkədən gətirilib: {kuza.country}</p> */}
 
 
 
