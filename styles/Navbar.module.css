@@ -8,6 +8,9 @@
    padding:14px 85px  0px 60px;
 }
 
+.burgerMenu{
+    display: none;
+}
 .nav>ul:first-child{
     display: flex;
     justify-content: space-between;
@@ -87,7 +90,51 @@ font-size: 18px;
 
     
     .nav{
+        text-align: center;
+        height: 600px;
+        top: 60px;
+        flex-direction: column;
+        background: #ffffff;
+        justify-content: flex-start;
+      
+        
+    }
+    .nav>ul>div{
         display: none;
     }
-    
+    .nav>ul>li>a{
+        font-size: 16px;
+        color: #333333;
+    }
+    .nav>ul:first-child{
+     padding: 0;
+        display: block;
+        order: 2;
+        width: initial;
+        margin: 0 auto;
+    }
+    .nav>ul>li::before, .nav>ul>li::after{
+        width: 80%;
+
+        height: 1px;
+        background-color: #333333;
+    }
+    .lang{
+        order: 1;
+        width: 100%;
+        color: #333333;
+    }
+
+    .nav>ul{
+        color: #333333;
+    } 
+
+
+    .burgerMenu{
+        color: white;
+        top: 0;
+        right: 10px;
+        position: fixed;
+        display: block;
+    }
     }

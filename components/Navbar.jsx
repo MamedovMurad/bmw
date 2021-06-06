@@ -8,7 +8,7 @@ const Navbar = (props) => {
   const router = useRouter()
     const [context, setContext] = useContext(Context);
 
-
+const [burgerMenu, setburgerMenu] = useState(false)
 /* test */
  
   const  cehckLang=(params)=>{
@@ -30,7 +30,13 @@ const Navbar = (props) => {
    
   }, [cehckLang])
     return (
-        <div className={style.nav}>
+     <>
+        <div className={style.burgerMenu} onClick={()=>{setburgerMenu(!burgerMenu)}}>
+            menu
+          </div>
+
+        <div style={{display: burgerMenu? "flex" : "none"}} className={style.nav}>
+        
             <ul>
             <div>
                 <Link href="/">
@@ -82,7 +88,7 @@ const Navbar = (props) => {
          <li className={context=='ru'?style.activeNav:""}  onClick={()=>cehckLang('ru')}>RU</li>
             </ul>
         </div>
-    )
+    </>)
 }
 
 export default Navbar
