@@ -242,5 +242,53 @@ color: #FFFFFF;
 
 }
 
+/* mobile versia */
+@media only screen and (max-width: 700px) {
+
+    
+    .lastBanner{
+        display: none;
+    }
+    .title{
+        
+        top: 58px;
+        width: 85%;
+        left: 9px;
+        font-size: 48px;
+    }
+    .sliderToCatalog{
+        left: 12px;
+        bottom: 45px;
+    }
+    .sliderClick{
+        display: none !important;
+    }
+    .customHeader>img{
+        height: 450px;
+    }
+    .homeTitle>h3{
+        display: flex;
+        justify-content: space-between;
+    }
+    .homeTitle{
+        font-size: 35px;
+    }  
+    .homeTitle>h3>span:nth-child(2){
+       
+        width: 75%;
+        display: inline-block;
+        text-align: center;
+      
+    }
+    .homeTitle>h3>span:nth-child(2)>span{
+  display: block;
+    }
+    .homeTitle>h3>span{
+        margin: 0;
+        display: inline-block;
+    }
+    }
+
+
 
 

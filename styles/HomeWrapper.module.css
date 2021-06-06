@@ -68,3 +68,22 @@ color: #FFFFFF;
     top: 15px;
     right: -60px;
 }
+
+/* mobile versia */
+@media only screen and (max-width: 700px) {
+
+    
+    .parentEl>ul{
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .parentEl>ul>li{
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+    
+    }

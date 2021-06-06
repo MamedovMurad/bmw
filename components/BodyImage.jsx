@@ -13,7 +13,7 @@ const BodyImage = ({title}) => {
                     </li>
                     <li>|</li>
                     <li>
-                    <span>Katoloq</span>
+    <span>{title}</span>
                     </li>
                 </ul>
            
