@@ -9,7 +9,7 @@ const BodyBanner = () => {
 
 const [products, setproducts] = useState([])
 const [spin, setspin] = useState(0)
-
+console.log('spin'+spin);
 function isEmpty(obj) {
     for(var key in obj) {
         if(obj.hasOwnProperty(key))
@@ -18,7 +18,7 @@ function isEmpty(obj) {
     return true;
 }
 
-console.log(router.query);
+
 
 
        if(router.pathname=='/search'){

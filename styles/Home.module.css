@@ -117,7 +117,8 @@ color: #000000;
 }
 
 .LinkHome{
-    text-align: right;
+    margin-top: 50px;
+    text-align: center;
 }
 .LinkHome>a:hover{
     background-color: #512DAB;

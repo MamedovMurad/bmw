@@ -105,7 +105,7 @@ let nextSlider= data.data.length-1;
          <div className="custom_wrapper">
            {data.data.map((e,index)=>(
              
-             <Link href="Katalog">
+             <Link href="/Katalog">
              <a >
              <h1 key={index}
              className={index==slider?styles.title:styles.deactiveTitle}>
@@ -150,11 +150,7 @@ let nextSlider= data.data.length-1;
       </span>
     </h3>
 
-    <div className={styles.LinkHome}>
-    <Link href={{ pathname: '/search', query: { seriya_id:1 ,category_id:"",kuzov_id:""} }}>
-                  <a>Hamsına bax</a>
-                  </Link>
-    </div>
+  
 </div>
 <div className={styles.katalogParent}>
   {thirtSeria.map((item,index)=>(
@@ -162,7 +158,11 @@ let nextSlider= data.data.length-1;
   ))}
   
 </div>
-
+<div className={styles.LinkHome}>
+    <Link href={{ pathname: '/search', query: { seriya_id:1 ,category_id:"",kuzov_id:""} }}>
+                  <a>Hamsına bax</a>
+                  </Link>
+    </div>
 
 
  </div>
@@ -192,11 +192,7 @@ let nextSlider= data.data.length-1;
       </span>
     </h3>
 
-    <div className={styles.LinkHome}>
-    <Link href={{ pathname: '/search', query: { seriya_id:3 ,category_id:"",kuzov_id:""} }}>
-                  <a>Hamsına bax</a>
-                  </Link>
-    </div>
+  
 </div>
 </div>
 
@@ -207,7 +203,11 @@ let nextSlider= data.data.length-1;
   
 </div>
 
-
+<div className={styles.LinkHome}>
+    <Link href={{ pathname: '/search', query: { seriya_id:3 ,category_id:"",kuzov_id:""} }}>
+                  <a>Hamsına bax</a>
+                  </Link>
+    </div>
 
 </div>
 <div className={styles.lasbannerParent}>
@@ -269,11 +269,7 @@ let nextSlider= data.data.length-1;
       </span>
     </h3>
 
-    <div className={styles.LinkHome}>
-    <Link href={{ pathname: '/search', query: { seriya_id:4 ,category_id:"",kuzov_id:""} }}>
-                  <a>Hamsına bax</a>
-                  </Link>
-    </div>
+  
 </div>
 
 <div className={styles.katalogParent}>
@@ -282,6 +278,11 @@ let nextSlider= data.data.length-1;
   ))}
   
 </div>
+<div className={styles.LinkHome}>
+    <Link href={{ pathname: '/search', query: { seriya_id:4 ,category_id:"",kuzov_id:""} }}>
+                  <a>Hamsına bax</a>
+                  </Link>
+    </div>
 </div>
 </div>
     <Footer/>
