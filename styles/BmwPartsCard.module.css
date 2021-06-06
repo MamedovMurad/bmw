@@ -64,7 +64,11 @@ padding: 0;
 
     
 .partCards{
-    display: none;
+    width: 100%;
+    height: 400px;
+    padding: 0px !important;
+    margin-left: 0px;
+    margin-top: 25px;
 }
 
 }

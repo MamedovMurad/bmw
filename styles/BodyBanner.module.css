@@ -65,3 +65,46 @@ padding-left: 99px;
 .quickLink>li{
     font-family: MarkPro;
 }
+/* mobile versia */
+@media only screen and (max-width: 700px) {
+
+    .first{
+        margin-bottom: 140px;
+    }
+    .headerTitle>h3>span.text{
+        margin: 0;
+    }
+    .headerTitle>h3{
+    justify-content: space-between;
+    }
+    .quickLink{
+display: none;
+    }
+    .headerTitle{
+        background-color: #fff;
+        margin: 146px 0;
+    }
+
+    .bkEffect{
+        background: url('../public/uploads/mobbanner.jpg');
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 100%;
+        background-size: cover;
+        background-position:87%;
+    }
+
+    .bodyBanner>div{
+        padding: 0;
+        display: block;
+        max-width: 100%;
+        margin: 0 ;
+    }
+    .bodyBanner{
+    
+        margin-top: 58px;
+      
+         
+        }
+    }
+
