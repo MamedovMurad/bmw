@@ -34,10 +34,10 @@ const [burgerMenu, setburgerMenu] = useState(false)
         <div className={style.burgerMenu} onClick={()=>{setburgerMenu(!burgerMenu)}}>
             menu
           </div>
-
-        <div style={{display: burgerMenu? "flex" : "none"}} className={style.nav}>
+<div className={!burgerMenu?style.mobilNav:""}>
+<div  className={style.nav}>
         
-            <ul>
+            <ul >
             <div>
                 <Link href="/">
               <a>   <Image
@@ -88,6 +88,8 @@ const [burgerMenu, setburgerMenu] = useState(false)
          <li className={context=='ru'?style.activeNav:""}  onClick={()=>cehckLang('ru')}>RU</li>
             </ul>
         </div>
+</div>
+        
     </>)
 }
 
