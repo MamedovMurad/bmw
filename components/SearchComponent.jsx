@@ -53,8 +53,21 @@ const router = useRouter()
 
     return (
         <div className={Style.searchArea}>
+
+<div className={Style.mobileSearch}>
+          <Image
+          src="/uploads/search.svg"   
+          alt=""
+          width={41}
+          height={32}
+          objectFit='contain'
+      />
+          </div>
+
+
+
             <div className="logo_small">
-            <Image
+            <img
         src="/uploads/2.svg"
         alt="Picture of the author"
         width={114}
@@ -64,7 +77,8 @@ const router = useRouter()
 
 
             </div>
-           <form action="">
+
+<form action="">
                <div>
          
 

@@ -9,7 +9,9 @@ margin: auto;
  left: 0; bottom: -50px; right: 0
 
 }
-
+.mobileSearch{
+    display: none;
+}
 .searchArea>form{
     margin-top: -40px;
     
@@ -46,9 +48,24 @@ margin: auto;
 /* mobile versia */
 @media only screen and (max-width: 700px) {
 
-    
+    .searchArea>.logo_small{
+        display: none !important;
+    }
     .searchArea{
         display: none;
+  /*       position: fixed;
+        background: #ffffff;
+    
+     border-radius: 0;
+     width:100%;
+    
+     top: -400px;
+     z-index: 3;
+      left: 0;  */
+    }
+
+    .searchArea>form{
+        display: block;
     }
     
     }

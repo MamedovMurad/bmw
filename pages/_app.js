@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import React, { useState } from "react";
-import { Context } from "../context/Context";
+import { Context,SearchContext } from "../context/Context";
 import 'antd/dist/antd.css';
 import Head from 'next/head'
 import Router from 'next/router'
@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
     NProgress.done()
     
   });
-
+  const [search, setsearch] = useState(false)
   const [context, setContext] = useState("az");
 
 
@@ -36,6 +36,7 @@ integrity="sha512-42kB9yDlYiCEfx2xVwq0q7hT4uf26FUgSIZBK8uiaEnTdShXjwr8Ip1V4xGJMg
 <Context.Provider value={[context, setContext]}>
   <Component {...pageProps} />
   </Context.Provider>
+
 </>
   )
 

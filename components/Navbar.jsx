@@ -4,7 +4,8 @@ import Link from 'next/link'
 import { Context } from "../context/Context";
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-const Navbar = (props) => {
+const Navbar = ({search}) => {
+
   const router = useRouter()
     const [context, setContext] = useContext(Context);
 
@@ -31,8 +32,38 @@ const [burgerMenu, setburgerMenu] = useState(false)
   }, [cehckLang])
     return (
      <>
-        <div className={style.burgerMenu} onClick={()=>{setburgerMenu(!burgerMenu)}}>
-            menu
+
+        <div className={style.burgerMenu} >
+        <div>
+          <Image
+          src="/uploads/search.svg"   
+          alt=""
+          width={41}
+          height={32}
+          objectFit='contain'
+      />
+          </div>
+          <div onClick={()=>{setburgerMenu(!burgerMenu)}}> 
+         {burgerMenu ? 
+         
+         <Image
+         src="/uploads/burgerdeactive.svg" 
+         alt=""
+         width={41}
+         height={32}
+         objectFit='contain'
+     />
+          :
+          <Image
+          src="/uploads/burgermenu.svg"   
+          alt=""
+          width={41}
+          height={32}
+          objectFit='contain'
+      />} 
+         </div>
+  
+  
           </div>
 <div className={!burgerMenu?style.mobilNav:""}>
 <div  className={style.nav}>
@@ -81,6 +112,8 @@ const [burgerMenu, setburgerMenu] = useState(false)
                 {context=='az'? <a>Əlaqə</a> : <a>   Контакт</a>}
                 </Link>
                 </li>
+
+                <li className={style.lastLi}></li>
             </ul>
 
             <ul className={style.lang}>

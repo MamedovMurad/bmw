@@ -68,7 +68,12 @@ div.ant-select-selector{
     max-width: 100%;
     margin: 0 ;
   }
-  
+  .logo_small{
+    display: none;
+  }
+  div.ant-select-selector{
+background-color: #444444;
+  }
   }
 
 

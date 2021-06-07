@@ -80,6 +80,9 @@ font-size: 18px;
     bottom: -80px;
     
 }
+.lastLi{
+    display: none;
+}
 /*  */
 
 
@@ -90,9 +93,10 @@ font-size: 18px;
         display: none;
     }
     .nav{
+        padding: 14px;
         text-align: center;
         height: 600px;
-        top: 60px;
+        top: 80px;
         flex-direction: column;
         background: #ffffff;
         justify-content: flex-start;
@@ -126,15 +130,33 @@ font-size: 18px;
     }
 
     .nav>ul{
+        width: 100%;
         color: #333333;
     } 
 
 
     .burgerMenu{
+        height: 70vh;
+        z-index: 9;
+        width: 100px;
         color: white;
-        top: 0;
+        top: 20px;
         right: 10px;
         position: fixed;
         display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lastLi{
+        display: block;
+        
+        height: 58px;
+     
+        width: 80%;
+        position: absolute;
+        left: 10%;
+        background: #32BF00;
+        border-radius: 8px;
     }
     }

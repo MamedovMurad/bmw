@@ -100,7 +100,7 @@ let nextSlider= data.data.length-1;
      
 
          <div className={styles.CustomNav}>
-         <Navbar lang={lang} setlang={setlang}/>
+         <Navbar />
          </div>
          <div className="custom_wrapper">
            {data.data.map((e,index)=>(
