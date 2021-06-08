@@ -71,8 +71,17 @@ div.ant-select-selector{
   .logo_small{
     display: none;
   }
-  div.ant-select-selector{
-background-color: #444444;
+  .SearchComponent_CustomSelect__ksImC{
+background-color: #F6F6F6;
+border-radius: 8px;
+width: 100% !important;
+  }
+  .SearchComponent_searchArea__2Ch5G>form>div{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .SearchComponent_CustomSelect__ksImC>.ant-select-selector{
+    background-color: #F6F6F6 !important;
   }
   }
 

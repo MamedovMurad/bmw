@@ -22,6 +22,9 @@ font-size: 18px;
     list-style: none;
     color: white;
 } 
+.burgerMenu{
+    display: none;
+}
 .nav>ul>li{
     transform: translateY(-12px);
     cursor: pointer;
@@ -83,6 +86,9 @@ font-size: 18px;
 .lastLi{
     display: none;
 }
+.mobilesearch{
+    display: none;
+}
 /*  */
 
 
@@ -92,11 +98,12 @@ font-size: 18px;
     .mobilNav{
         display: none;
     }
+
     .nav{
+        height: 100vh;
         padding: 14px;
         text-align: center;
-        height: 600px;
-        top: 80px;
+        top: 70px;
         flex-direction: column;
         background: #ffffff;
         justify-content: flex-start;
@@ -136,7 +143,7 @@ font-size: 18px;
 
 
     .burgerMenu{
-        height: 70vh;
+       
         z-index: 9;
         width: 100px;
         color: white;
@@ -147,16 +154,27 @@ font-size: 18px;
         display: flex;
         justify-content: space-between;
     }
-
+    .lastLi::after,.lastLi::before{
+        width: 0px !important;
+    }
     .lastLi{
         display: block;
         
         height: 58px;
-     
+
         width: 80%;
         position: absolute;
         left: 10%;
         background: #32BF00;
         border-radius: 8px;
     }
+
+    .lastLi>a:last-child{
+        display: inline-block;
+        transform: translateY(10px);
+        color: white;
+   
+        
+    }
+ 
     }

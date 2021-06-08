@@ -44,6 +44,7 @@ const handleKuza= async(value)=>{
   
     setallCate(product);
   }
+  const [mobilclick, setmobilclick] = useState(true)
   useEffect(() => {
     getSeria();
     getCate();
@@ -52,9 +53,8 @@ const handleKuza= async(value)=>{
 const router = useRouter()
 
     return (
-        <div className={Style.searchArea}>
-
-<div className={Style.mobileSearch}>
+      <>
+      <div className={Style.mobileSearch} onClick={()=>{setmobilclick(!mobilclick)}}>
           <Image
           src="/uploads/search.svg"   
           alt=""
@@ -63,6 +63,16 @@ const router = useRouter()
           objectFit='contain'
       />
           </div>
+      <div className={mobilclick? Style.searchAreaNone:""}>
+       <div className={Style.searchArea}>
+<span className={Style.mobileExt} onClick={()=>{setmobilclick(!mobilclick)}}>
+<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.981369" y="29.9785" width="41" height="3" transform="rotate(-45.1606 0.981369 29.9785)" fill="#512DAB"/>
+<rect x="3.06499" y="0.943604" width="41" height="3" transform="rotate(45 3.06499 0.943604)" fill="#512DAB"/>
+</svg>
+
+</span>
+
 
 
 
@@ -121,9 +131,13 @@ const router = useRouter()
                           pathname:'/search',
                           query:{seriya_id:search.seria,category_id:search.category,kuzov_id:search.kuzov},
                           
-                      })
+                      });
+                      setmobilclick(!mobilclick)
                   }}>
-                <Image
+                    <p>
+                    Axtar
+                    </p>
+                <img
                    src="/uploads/Search.svg"
                    alt="Picture of the author"
                    width={39.5}
@@ -133,6 +147,9 @@ const router = useRouter()
                </div>
            </form>
         </div>
+      </div>
+
+ </>
     )
 }
 

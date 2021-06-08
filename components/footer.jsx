@@ -37,10 +37,10 @@ const Footer = () => {
 
             <ul className={Style.footerFirstLine}>
                 <li>
-                <img src="../uploads/whatsapp.svg" alt="" width="19"/>  <a href="+994 50 308 28 53">+994 50 308 28 53 </a> 
+                <img src="../uploads/whatsapp.svg" alt="" width="19"/>  <a href="tel:+994 50 308 28 53">+994 50 308 28 53 </a> 
                 </li>
                 <li>
-                <img src="../uploads/Call.svg" alt="" width="19"/>  <a href="+994 55 771 12 25">+994 55 771 12 25</a> 
+                <img src="../uploads/Call.svg" alt="" width="19"/>  <a href="tel:+994 55 771 12 25">+994 55 771 12 25</a> 
                 </li>
                 <li>
                 <img src="../uploads/Call.svg" alt="" width="19"/> <a href="tel:+994 50 610 00 17">+994 50 610 00 17</a>

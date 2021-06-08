@@ -9,6 +9,9 @@ margin: auto;
  left: 0; bottom: -50px; right: 0
 
 }
+.mobileExt{
+    display: none;
+}
 .mobileSearch{
     display: none;
 }
@@ -44,28 +47,65 @@ margin: auto;
 .searchArea>form>div>select>option{
     height: 120px !important;
 }
-
+.searchArea>form>div>button>p{
+    display: none;
+}
 /* mobile versia */
 @media only screen and (max-width: 700px) {
 
     .searchArea>.logo_small{
         display: none !important;
     }
+    .mobileSearch{
+        display: block;
+        position: fixed;
+        top: 17px;
+        z-index: 9;
+        right: 20%;
+    }
     .searchArea{
-        display: none;
-  /*       position: fixed;
+        
+        position: fixed;
         background: #ffffff;
-    
+    padding: 20px 30px;
      border-radius: 0;
      width:100%;
-    
-     top: -400px;
-     z-index: 3;
-      left: 0;  */
+    height: 100vh;
+     top: -50px;
+     z-index: 99;
+      left: 0; 
     }
 
     .searchArea>form{
+        margin-top: 65px;
         display: block;
     }
+    .searchArea>form>div{
+        margin-top: 13px
+    }
+ .mobileExt{
+     display: inline-block !important;
+     float: right;
     
+ }
+ .searchArea>form>div>button{
+     margin-top: 30px;
+     background-color: #017BEA;
+     display: block;
+     width: 100%;
+     border-radius: 5px;
+    
+ }
+ .searchArea>form>div>button>img{
+display: none;
+ }
+ .searchArea>form>div>button>p{
+    font-size: 18px;
+    transform: translateY(8px);
+     display: block;
+     color: white;
+ }
+ .searchAreaNone{
+     display: none;
+ }
     }

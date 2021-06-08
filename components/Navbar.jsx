@@ -33,15 +33,9 @@ const [burgerMenu, setburgerMenu] = useState(false)
     return (
      <>
 
-        <div className={style.burgerMenu} >
+     <div className={style.burgerMenu} >
         <div>
-          <Image
-          src="/uploads/search.svg"   
-          alt=""
-          width={41}
-          height={32}
-          objectFit='contain'
-      />
+    
           </div>
           <div onClick={()=>{setburgerMenu(!burgerMenu)}}> 
          {burgerMenu ? 
@@ -101,7 +95,7 @@ const [burgerMenu, setburgerMenu] = useState(false)
                 <li className={router.pathname=='/nece-almaq'?style.activeNav:""}>
                 <Link href="/nece-almaq">
            
-                {context=='az'? <a>Necə almaq olar?</a> : <a>     Как купить ?</a>}
+                {context=='az'? <a>Necə almaq olar?</a> : <a style={{display:"inline-block"}}>Как купить?</a>}
                 
                 </Link>
                 </li>
@@ -113,7 +107,11 @@ const [burgerMenu, setburgerMenu] = useState(false)
                 </Link>
                 </li>
 
-                <li className={style.lastLi}></li>
+                <li className={style.lastLi}>
+                <a href="https://wa.me/+994506100017"><img src="/uploads/whatsapp.svg" width="30"  alt=""/> WhatsApp-la sifariş elə</a>
+          
+               
+                </li>
             </ul>
 
             <ul className={style.lang}>
