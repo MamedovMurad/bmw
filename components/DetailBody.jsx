@@ -25,7 +25,7 @@ const status={
 
                 <ul>
                      {data.images.map((item,index)=>(
-                    <li key={index} onClick={()=>{setSlider(`http://bmwpartsbaku.az/${item.title}`)}}>
+                    <li className={Style.desktopCarousel} key={index} onClick={()=>{setSlider(`http://bmwpartsbaku.az/${item.title}`)}}>
                         <img src={`http://bmwpartsbaku.az/${item.title}`} alt=""/>
                    </li>
                     ))} 

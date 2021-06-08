@@ -43,7 +43,7 @@ margin-bottom: 50px;
     justify-content: center;
   
 }
-.headerTitle>h3>span.text{
+.headerTitle>h3>p.text{
     margin: 0 38px;
 }
 .quickLink{
@@ -71,7 +71,11 @@ padding-left: 99px;
     .first{
         margin-bottom: 140px;
     }
-    .headerTitle>h3>span.text{
+    .headerTitle>h3>p.text{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
         font-size: 36px;
         margin: 0;
     }

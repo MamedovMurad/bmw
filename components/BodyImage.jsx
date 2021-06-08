@@ -26,7 +26,7 @@ const BodyImage = ({title}) => {
                 </svg>
                 </span>
 
-    <span className={Style.text}>{title}</span>
+    <p className={Style.text}>{title}</p>
 
                 <span><svg width="65" height="31" viewBox="0 0 65 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 0H33L16 31H0L16 0Z" fill="#017BEA"/>
