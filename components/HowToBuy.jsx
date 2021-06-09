@@ -19,11 +19,10 @@ const HowToBuy = () => {
                 </div>
 
                 <div>
-                <Image
+                <img
                     src="/uploads/howtobuy.png"
                     alt="Picture of the author"
-                    width={430}
-                    height={430}
+                   
                 />
                 </div>
             </div>

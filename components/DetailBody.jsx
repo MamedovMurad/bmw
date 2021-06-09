@@ -1,9 +1,13 @@
 import React, { useState ,useContext} from 'react';
+import BmwPartsCard from './BmwPartsCard'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import Style from '../styles/DetailBody.module.css'
 import { Context } from "../context/Context";
 const DetailBody = ({data}) => {
     const [context, setContext] = useContext(Context);
 const [slider, setSlider] = useState(`https://bmwpartsbaku.az/${data.mainimage}`)
+const [customdata, setcustomdata] = useState(null)
 const status={
     status_good_az:'Əla',
     status_good_ru:'отлично',
@@ -12,6 +16,31 @@ const status={
     status_bad_az:'Kafi',
     status_bad_ru:'достаточно',
 }
+/* async function Mydata(){
+
+}
+useEffect(() => {
+ 
+}, []) */
+const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
     return (
         <div className='custom_wrapper'>
           <div className={Style.parentElement}>
@@ -62,6 +91,18 @@ const status={
                 </div>
             </div>
           </div>
+        <div className={Style.relationData} >
+        <Carousel responsive={responsive}>
+            
+                    <div><BmwPartsCard data={data}/></div>
+                    <div><BmwPartsCard data={data}/></div>
+                    <div><BmwPartsCard data={data}/></div>
+                    <div><BmwPartsCard data={data}/></div>
+                    <div><BmwPartsCard data={data}/></div>
+                    <div><BmwPartsCard data={data}/></div>
+                    </Carousel>
+        </div>
+       
         </div>
     )
 }

@@ -41,3 +41,49 @@ color: #000000;
     height: 266px; 
     background: url('../public/uploads/map.png');
 }
+.imageDivMobile{
+    display: none;
+}
+@media only screen and (max-width: 700px) {
+    .container,.parentEl
+    {
+        display: block;
+    }
+    .container{
+        margin-top: 70px;
+    }
+    .parentEl>div>p{
+        margin-top: 31px;
+        width: 100%;
+    }
+    .parentEl>div{
+        text-align: center;
+    }
+    .container>.imageDiv{
+display: none;
+    }
+    .parentEl>div{
+margin-left: 0;
+    }
+
+    .parentEl>div:last-child>p:first-child{
+        transform: translateX(0);
+        }
+
+        .imageDivMobile{
+         margin-bottom: 77px;
+            height: 232px;
+            width: 100%;
+            display: block;
+        }
+
+        .imageDivMobile>img{
+            width: 100%;
+            object-fit: cover;
+            height: 280px;
+            
+        }
+        .containerLeft iframe{
+            width: 100% !important;
+        }
+}
