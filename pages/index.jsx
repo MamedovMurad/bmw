@@ -215,8 +215,7 @@ let nextSlider= data.data.length-1;
 
 <div className={styles.lastBanner}>
  <p>
- Sifariş etmək istəyirsiniz? <br/>
-  Bizimlə əlaqə saxlayın
+Whatsapp'la Sifariş
  </p>
    <div className={styles.lastBannerLink}>
                 <Link href="/contact">

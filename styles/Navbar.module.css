@@ -190,6 +190,10 @@
             opacity: 1;
         }
     }
+    .overLay>span{
+        display: inline-block;
+        transform: translateY(10px);
+    }
     .overLay {
         position: fixed;
         display: block;

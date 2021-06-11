@@ -59,12 +59,17 @@
         padding: 10px 0;
         height: inherit;
     }
+    .footerArea>ul{
+        width: 80%;
+        margin: 0 auto;
+        border-bottom: 1px dashed #ffffff;
+    }
     .footerFirstLine {
         padding: 0;
         display: block;
     }
     .footerFirstLine>li {
-        border-bottom: 1px dashed #000000;
+       
         text-align: center;
         margin: 0;
         padding: 18px 0;
@@ -74,7 +79,9 @@
         padding-left: 10px;
         padding-right: 10px;
         font-size: 16px;
+        padding-top: 17px;
     }
+ 
     .footerArea>p img {
         width: 100px;
     }

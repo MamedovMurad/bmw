@@ -120,7 +120,19 @@ const [burgerMenu, setburgerMenu] = useState(false)
             </ul>
         </div>
 </div>
-        <div className={style.overLay}></div>
+        <div className={style.overLay}>
+          <span >
+          <Link href="/">
+              <a>   <Image
+                    src="/uploads/logowhite.png"
+                    alt="Picture of the author"
+                    width={101}
+                    height={50}
+                    objectFit='contain'
+                /></a>
+                </Link>
+          </span>
+        </div>
     </>)
 }
 

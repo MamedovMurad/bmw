@@ -142,7 +142,9 @@ margin-bottom: 5px;
 
 /* mobile versia */
 @media only screen and (max-width: 700px) {
-
+  .img__custom{
+    height: 270px !important;
+  }
     
   .parentelement{
  

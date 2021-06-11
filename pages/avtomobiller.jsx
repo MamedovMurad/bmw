@@ -61,7 +61,7 @@ const Cars = (cars) => {
    { data.length>0 &&  
    
 
- <img src={"https://bmwpartsbaku.az/"+data[modalIndex].images[imagesIndex].name} alt="" width="100%" height="500px" style={{objectFit:"cover"}}/> 
+ <img className={Style.img__custom} src={"https://bmwpartsbaku.az/"+data[modalIndex].images[imagesIndex].name} alt="" width="100%" height="500px" style={{objectFit:"cover"}}/> 
   
   
    

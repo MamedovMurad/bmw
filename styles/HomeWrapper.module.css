@@ -14,7 +14,6 @@
 .parentEl>ul>li:hover::after {
     width: 100%;
 }
-
 .parentEl>ul>li::after {
     transition: width .4s;
     content: "";
@@ -88,7 +87,7 @@
         width: 100% !important;
         margin: 0;
         padding: 0;
-        margin-top: 20px;
+        margin-top: 7px;
     }
     .parentEl {
         margin-top: 7px;
