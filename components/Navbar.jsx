@@ -76,7 +76,7 @@ const [burgerMenu, setburgerMenu] = useState(false)
                 </div>
                 <li className={router.pathname=='/'?style.activeNav:""}>
                 <Link href="/">
-               {context=='az'? <a>Əsas səhifə</a> : <a>Главная страница</a>}
+               {context=='az'? <a>Əsas Səhifə</a> : <a>Главная страница</a>}
                 </Link>
                 </li>
                 <li className={router.pathname=='/Katalog'?style.activeNav:""}>
@@ -95,7 +95,7 @@ const [burgerMenu, setburgerMenu] = useState(false)
                 <li className={router.pathname=='/nece-almaq'?style.activeNav:""}>
                 <Link href="/nece-almaq">
            
-                {context=='az'? <a>Necə almaq olar?</a> : <a style={{display:"inline-block"}}>Как купить?</a>}
+                {context=='az'? <a>Necə Almaq Olar?</a> : <a style={{display:"inline-block"}}>Как купить?</a>}
                 
                 </Link>
                 </li>
@@ -108,7 +108,7 @@ const [burgerMenu, setburgerMenu] = useState(false)
                 </li>
 
                 <li className={style.lastLi}>
-                <a href="https://wa.me/+994506100017"><img src="/uploads/whatsapp.svg" width="30"  alt=""/> WhatsApp-la sifariş elə</a>
+                <a href="https://wa.me/+994506100017"><img src="/uploads/whatsapp.svg" width="30"  alt=""/> WhatsApp-la sifariş</a>
           
                
                 </li>
@@ -120,7 +120,7 @@ const [burgerMenu, setburgerMenu] = useState(false)
             </ul>
         </div>
 </div>
-        
+        <div className={style.overLay}></div>
     </>)
 }
 

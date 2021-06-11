@@ -30,6 +30,7 @@ const Footer = () => {
                 <a>Əlaqə</a>
                 </Link>
                 </li>
+                
             </ul>
 
 
@@ -52,6 +53,9 @@ const Footer = () => {
           <img src="../uploads/Location.svg" alt=""/> <span>Bakı şəh., Babək prs. 74</span> 
                 </li>
             </ul>
+            <p><span>© Bmwpartsbaku.az. Müəllif Hüquqları Qorunur.</span>
+            <span>Site by  <img src="/uploads/jedai.png" style={{marginLeft:"10px"}} alt="" /></span>
+            </p>
         </div>
     )
 }

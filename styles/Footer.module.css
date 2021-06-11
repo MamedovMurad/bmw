@@ -1,52 +1,81 @@
-.footerArea{
+.footerArea {
     width: 100%;
-    height: 180px;
     background-color: #512DAB;
 }
-.footerFirstLine{
+
+.footerArea>p>span {
+    display: block;
+}
+
+.footerArea>p {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 17px;
+    padding: 40px 0 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.footerFirstLine {
     display: flex;
     justify-content: center;
     color: white;
     list-style: none;
-
 }
-.footerFirstLine>li>a,.footerFirstLine>li>span{
+
+.footerFirstLine>li>a,
+.footerFirstLine>li>span {
     display: inline-block;
     margin-left: 8px;
 }
-.footerFirstLine>li{
+
+.footerFirstLine>li {
     margin-left: 70px;
     margin-top: 44px;
 }
-@font-face{
+
+@font-face {
     src: url('../public/fonts/GilroyRegular.otf');
     font-family: MarkRegular;
-  }
-.footerFirstLine>li>a,.footerFirstLine>li>span{
+}
+
+.footerFirstLine>li>a,
+.footerFirstLine>li>span {
     font-size: 17px;
     color: white;
     text-decoration: none;
-    font-family:MarkRegular;
+    font-family: MarkRegular;
 }
-.footerFirstLine>li:first-child{
-margin-left: 0px;
+
+.footerFirstLine>li:first-child {
+    margin-left: 0px;
 }
 
 
 /* mobile versia */
-@media only screen and (max-width: 700px) {
 
-    .footerArea{
+@media only screen and (max-width: 700px) {
+    .footerArea {
         padding: 10px 0;
-height: inherit;
+        height: inherit;
     }
-    .footerFirstLine{
+    .footerFirstLine {
         padding: 0;
-       display: block;
+        display: block;
     }
-    .footerFirstLine>li{
+    .footerFirstLine>li {
+        border-bottom: 1px dashed #000000;
         text-align: center;
         margin: 0;
-        margin-top: 37px;
+        padding: 18px 0;
+        margin-top: 0;
     }
+    .footerArea>p {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 16px;
     }
+    .footerArea>p img {
+        width: 100px;
+    }
+}
