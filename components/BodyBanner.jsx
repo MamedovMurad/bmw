@@ -3,7 +3,9 @@ import Style from '../styles/BodyBanner.module.css'
 import BmwPartsCard from './BmwPartsCard'
 import BodyImage from './BodyImage'
 import { useRouter } from 'next/router'
-import { Skeleton ,Empty} from 'antd';
+import { Skeleton ,Empty,Pagination} from 'antd';
+
+
 const BodyBanner = () => {
     const router = useRouter()
 
@@ -31,7 +33,7 @@ function isEmpty(obj) {
         },[router.query]) 
         }else{
             useEffect(async ()=> {
-                const   url=`https://bmwpartsbaku.az/api/search?category_id=&kuzov_id=&seriya_id=`
+                const   url=`https://bmwpartsbaku.az/api/products`
                 const res = await fetch(url);           
                 const product= await res.json();
                 setspin(1);
@@ -65,8 +67,13 @@ function isEmpty(obj) {
             
            
             </div>
-         
+            <div style={{marginTop:"50px",display:'flex',justifyContent:'center'}}>   
+       
+
+<Pagination defaultPageSize={2} showSizeChanger={false} defaultCurrent={1} total={20} />
+            </div>
         </div>
+       
 </div>
     )
 }
