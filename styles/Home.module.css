@@ -360,6 +360,13 @@ border-radius: 5px;
 }
 
 @media only screen and (max-width: 900px) and (min-width:700px) {
+    .LinkHome>a{
+
+        border-radius: 5px;
+            }
+            .activeSlider {
+                animation: mySLiderDeactive 1.3s forwards;
+            }
     .title {
         top: 233px;
         width: 45%;
@@ -374,9 +381,17 @@ left: 10px;
     }
 
     .katalogParent {
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
+     justify-content: center;
         display: flex;
         flex-wrap: wrap;
+    }
+    .lastBanner>.animeWp {
+  
+        bottom: 92px;
+        right: 20%;
+      
+  
+      
     }
 }

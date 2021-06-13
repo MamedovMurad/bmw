@@ -81,7 +81,9 @@
         font-size: 16px;
         padding-top: 17px;
     }
- 
+    .footerArea>p a{
+        color: white;
+    }
     .footerArea>p img {
         width: 100px;
     }

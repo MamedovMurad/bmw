@@ -54,7 +54,7 @@ const Footer = () => {
                 </li>
             </ul>
             <p><span>© Bmwpartsbaku.az. Müəllif Hüquqları Qorunur.</span>
-            <span>Site by  <img src="/uploads/jedai.png" style={{marginLeft:"10px"}} alt="" /></span>
+           <a href="https://jedai.az/az"><span>Site by  <img src="/uploads/jedai.png" style={{marginLeft:"10px"}} alt="" /></span></a> 
             </p>
         </div>
     )

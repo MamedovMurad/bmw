@@ -73,12 +73,13 @@ padding-left: 99px;
         margin-bottom: 140px;
     }
     .headerTitle>h3>p.text{
+        text-align: center;
+        line-height: 26px;
+    
         transform: translateY(10px);
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+
         
-        font-size: 36px;
+        font-size: 30px;
         margin: 0;
     }
     .headerTitle>h3{
