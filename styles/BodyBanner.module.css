@@ -114,4 +114,16 @@ display: none;
          
         }
     }
-
+    @media only screen and (max-width: 900px) and (min-width:700px) {
+        .bodyBanner>div{
+  
+   
+            padding: 0px;
+            display: flex;
+           
+            flex-wrap: wrap;
+            justify-content: center;
+          
+            margin: 0 auto;
+        }
+    }

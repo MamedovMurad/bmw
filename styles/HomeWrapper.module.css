@@ -91,5 +91,9 @@
     }
     .parentEl {
         margin-top: 7px;
+    }  
+    .parentEl>ul>li.activeLi::after{
+        width: 100%;
     }
+  
 }

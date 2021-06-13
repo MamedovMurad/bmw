@@ -358,3 +358,25 @@
 border-radius: 5px;
     }
 }
+
+@media only screen and (max-width: 900px) and (min-width:700px) {
+    .title {
+        top: 233px;
+        width: 45%;
+        left: 9px;
+        font-size: 34px;
+    }
+    .sliderClick {
+        display: none !important;
+    }
+    .sliderToCatalog {
+left: 10px;
+    }
+
+    .katalogParent {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

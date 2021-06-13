@@ -23,7 +23,7 @@
 .parentElement>.content>p:first-child{
     margin-top: 0px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
     .parentElement{
         margin-top: 50px;
         padding: 0 20px;
@@ -34,5 +34,11 @@ width: 100%;
     }
     .parentElement>div>img{
         width: 100% !important;
+    }
+}
+@media only screen and (max-width: 900px) and (min-width:700px) {
+    .parentElement{
+        margin-top: -150px;
+
     }
 }

@@ -10,6 +10,7 @@ const BodyBanner = () => {
     const router = useRouter()
 
 const [products, setproducts] = useState([])
+const [productCount, setproductCount] = useState(null)
 const [spin, setspin] = useState(0)
 console.log('spin'+spin);
 function isEmpty(obj) {
@@ -29,7 +30,8 @@ function isEmpty(obj) {
             const res = await fetch(url);           
             const product= await res.json();
             setspin(1);
-            setproducts(product);
+            setproducts(product.data);
+            setproductCount(product.allCount)
         },[router.query]) 
         }else{
             useEffect(async ()=> {
@@ -37,13 +39,31 @@ function isEmpty(obj) {
                 const res = await fetch(url);           
                 const product= await res.json();
                 setspin(1);
-                setproducts(product);
+                setproducts(product.data);
+                setproductCount(product.allCount)
             },[router.query]) 
 
        }
       
+      const paginationChange = async(page,pagesize)=>{
+        if(router.pathname!='/search'){
+        const   url=`https://bmwpartsbaku.az/api/products?page=${page}`
+        const res = await fetch(url);           
+        const product= await res.json();
+      
+        setproducts(product.data);
+       
+          console.log(page,pagesize);
+      }else{
 
- 
+        const  url=`https://bmwpartsbaku.az/api/search?category_id=${router.query.category_id}&kuzov_id=${router.query.kuzov_id}&seriya_id=${router.query.seriya_id}&page=${page}`
+        const res = await fetch(url);           
+        const product= await res.json();
+       
+        setproducts(product.data);
+        
+      }
+    }
     return (
 <div className={Style.first}>
     
@@ -70,7 +90,7 @@ function isEmpty(obj) {
             <div style={{marginTop:"50px",display:'flex',justifyContent:'center'}}>   
        
 
-<Pagination defaultPageSize={2} showSizeChanger={false} defaultCurrent={1} total={20} />
+<Pagination defaultPageSize={2} onChange={paginationChange} showSizeChanger={false} defaultCurrent={1} total={productCount&&productCount} />
             </div>
         </div>
        

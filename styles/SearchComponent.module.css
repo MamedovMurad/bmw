@@ -62,7 +62,7 @@
 
 /* mobile versia */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
     .searchArea>.logo_small {
         display: none !important;
     }
