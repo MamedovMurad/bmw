@@ -282,7 +282,7 @@
         background-position: 80%;
     }
     .lastBanner>p {
-        left: 10px;
+        left: 15%;
         font-style: normal;
         font-weight: 450;
         font-size: 48px;
@@ -290,9 +290,10 @@
         color: #FFFFFF;
     }
     .lastBanner .lastBannerLink {
+       
         position: absolute;
         bottom: 53px;
-        left: 10px;
+        left: 30%;
     }
     .lastBanner>.animeWp {
         bottom: 121px;

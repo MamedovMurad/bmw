@@ -5,7 +5,7 @@ import moment from 'moment'
 import { Context } from "../context/Context";
 
 const Car = ({kuza,setvis,setModalIndex, index}) => {
-    console.log(setvis)
+   
     const [lang, setlang] = useContext(Context);
     moment.locale(lang)
     function image(){

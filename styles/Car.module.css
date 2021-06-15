@@ -141,7 +141,7 @@ margin-bottom: 5px;
 }
 @media only screen and (max-width: 900px) and (min-width:700px) {
   .parentelement{
-    justify-content: center;
+    justify-content: space-around;
     margin-left: 0;
   }
   .content{
@@ -161,6 +161,9 @@ margin-bottom: 5px;
     .modalFooter>h3{
       margin: 0;
     }
+    .parentelement>div{
+      margin-left: 0;
+    }
 }
 /* mobile versia */
 @media only screen and (max-width: 700px) {
@@ -169,7 +172,7 @@ margin-bottom: 5px;
   }
     
   .parentelement{
- 
+ padding: 0 20px;
     margin-bottom: 80px;
       margin-top: 50px;
       display: block;
@@ -179,7 +182,7 @@ margin-bottom: 5px;
   }
   .parentelement>div{
       width: 100%;
-     margin-left: 00px;
+     margin-left: 0px;
   }
   .imageCars{
     width: 100%;

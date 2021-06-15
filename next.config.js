@@ -3,3 +3,6 @@ module.exports = {
       domains: ['bmwpartsbaku.az'],
     },
   }
+
+  const withImages = require('next-images')
+module.exports = withImages()

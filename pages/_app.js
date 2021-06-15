@@ -10,12 +10,12 @@ function MyApp({ Component, pageProps }) {
 
 
   Router.events.on('routeChangeStart',(url) => {
-    console.log('salam')
+   
     NProgress.start()
     
   });
   Router.events.on('routeChangeComplete',(url) => {
-    console.log('complate')
+   
     NProgress.done()
     
   });

@@ -35,7 +35,7 @@ const HomeWrapper = () => {
        else if(window.pageYOffset<300||window.pageYOffset>1300){
         setanime(null);
        }
-          console.log(anime);
+  
           }
          
       }
