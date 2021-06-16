@@ -215,8 +215,10 @@ let nextSlider= data.data.length-1;
 
 <div className={styles.lastBanner}>
  <p>
-Whatsapp'la Sifariş
+ BMW İŞLƏNMİŞ EHTİYYAT HİSSƏLƏRİ <br/>
+ Whatsapp'la Sifariş Edin
  </p>
+
    <div className={styles.lastBannerLink}>
                 <Link href="/contact">
                   <a>Əlaqə</a>

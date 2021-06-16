@@ -6,11 +6,15 @@
 .footerArea>p>span {
     display: block;
 }
-
+.footerArea>p img {
+width: 150px;
+}
 .footerArea>p {
+    border-top: 2px dashed white;
     display: flex;
     justify-content: space-evenly;
     font-size: 17px;
+    margin-top: 30px;
     padding: 40px 0 20px 0;
     color: white;
     text-align: center;
@@ -22,7 +26,9 @@
     color: white;
     list-style: none;
 }
-
+.footerArea>p a{
+    color: white;
+}
 .footerFirstLine>li>a,
 .footerFirstLine>li>span {
     display: inline-block;
@@ -76,6 +82,8 @@
         margin-top: 0;
     }
     .footerArea>p {
+        border: none;
+        margin-top: 5px;
         padding-left: 10px;
         padding-right: 10px;
         font-size: 16px;

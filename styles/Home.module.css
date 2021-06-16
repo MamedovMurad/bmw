@@ -220,6 +220,8 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+
+    filter: brightness(70%)
 }
 
 .lasbannerParent {
@@ -282,21 +284,22 @@
         background-position: 80%;
     }
     .lastBanner>p {
-        left: 15%;
+        top: 13px;
+        left: 2%;
         font-style: normal;
         font-weight: 450;
-        font-size: 48px;
+        font-size: 41px;
         line-height: 61px;
         color: #FFFFFF;
     }
     .lastBanner .lastBannerLink {
        
         position: absolute;
-        bottom: 53px;
+        bottom: 31px;
         left: 30%;
     }
     .lastBanner>.animeWp {
-        bottom: 121px;
+        bottom: 111px;
         right: 0;
         margin: 0 auto;
         left: 0;
@@ -361,6 +364,11 @@ border-radius: 5px;
 }
 
 @media only screen and (max-width: 900px) and (min-width:700px) {
+    .lastBanner>p {
+        font-size: 53px;
+top: 13px;
+left: 14%;
+    }
     .LinkHome>a{
 
         border-radius: 5px;
@@ -369,15 +377,17 @@ border-radius: 5px;
                 animation: mySLiderDeactive 1.3s forwards;
             }
     .title {
+        font-size: 48px;
         top: 233px;
-        width: 45%;
+        width: 55%;
         left: 9px;
-        font-size: 34px;
+      
     }
     .sliderClick {
         display: none !important;
     }
     .sliderToCatalog {
+        bottom: 170px;
 left: 10px;
     }
 
@@ -389,10 +399,14 @@ left: 10px;
     }
     .lastBanner>.animeWp {
   
-        bottom: 92px;
+        bottom: 22px;
         right: 20%;
       
   
       
+    }
+    .lastBanner .lastBannerLink {
+bottom: 25px;
+
     }
 }

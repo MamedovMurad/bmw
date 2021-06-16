@@ -56,10 +56,13 @@
 
 .partCards>div:last-child>p:last-child {
     font-size: 22px;
-    margin-top: 0;
-    padding: 0;
+    margin-top: 5px;
+    padding-top: 5px;
 }
-
+.mustBorder{
+   
+    border-top: 1PX dashed white;
+}
 
 /* mobile versia */
 

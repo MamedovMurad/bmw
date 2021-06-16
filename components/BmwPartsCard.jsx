@@ -15,7 +15,7 @@ const BmwPartsCard = ({data}) => {
         </div>
                      <div>
                 <p>{data[`title_${lang}`]}</p>
-                <p>{data.price} ₼</p>
+                <p className={Style.mustBorder}>{data.price} ₼</p>
                     </div>   
         </div>
         </a>
