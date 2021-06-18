@@ -171,7 +171,7 @@
     height: 390px;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background: url('../public/uploads/down.jpg');
+    background: url('../public/uploads/down.png');
 }
 
 .categories {
