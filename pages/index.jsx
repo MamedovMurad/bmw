@@ -70,7 +70,7 @@ let nextSlider= data.data.length-1;
 
   return (
    
-    <div >
+    <div className={styles.fullBody}>
 
 
 
