@@ -45,6 +45,7 @@ function isEmpty(obj) {
 
        }
       
+
       const paginationChange = async(page,pagesize)=>{
         if(router.pathname!='/search'){
         const   url=`https://bmwpartsbaku.az/api/products?page=${page}`
@@ -64,6 +65,7 @@ function isEmpty(obj) {
         
       }
     }
+    
     return (
 <div className={Style.first}>
     
@@ -90,7 +92,7 @@ function isEmpty(obj) {
             <div style={{marginTop:"50px",display:'flex',justifyContent:'center'}}>   
        
 
-<Pagination defaultPageSize={2} onChange={paginationChange} showSizeChanger={false} defaultCurrent={1} total={productCount&&productCount} />
+<Pagination defaultPageSize={8} onChange={paginationChange} showSizeChanger={false} defaultCurrent={1} total={productCount&&productCount} />
             </div>
         </div>
        
