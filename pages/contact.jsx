@@ -25,9 +25,9 @@ const contact = () => {
     </svg>
 
       </span>
-        <span> 
+        <a href="tel: +994 50 308 28 53"> 
         +994 50 308 28 53 
-        </span>
+        </a>
       </p>  
       <p>
           <span><svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +35,7 @@ const contact = () => {
         <circle cx="15.3915" cy="13.6161" r="3.17862" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         </span>
-          <span>Bakı şəh., Babək prs. 74</span>
+          <span className={Style.address}>Bakı şəh., Babək prs. 74</span>
     </p>  
   </div>
 
@@ -45,7 +45,7 @@ const contact = () => {
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.73791 4.09067C2.13332 3.43598 4.31187 1.05471 5.86652 1.12659C6.33125 1.1651 6.74205 1.44624 7.07583 1.7723C7.84224 2.5207 10.0362 5.35127 10.1607 5.94691C10.4637 7.40776 8.72291 8.24987 9.25567 9.72228C10.6139 13.0458 12.9542 15.386 16.2792 16.7429C17.7504 17.2756 18.5925 15.5349 20.0535 15.8391C20.6479 15.9637 23.4799 18.1575 24.2283 18.9239C24.5531 19.2564 24.8355 19.6684 24.874 20.1331C24.9318 21.7699 22.4028 23.9791 21.9098 24.2615C20.7467 25.0934 19.2293 25.0793 17.3794 24.2192C12.2173 22.0715 3.96782 13.9778 1.78028 8.62087C0.943261 6.78132 0.885491 5.25371 1.73791 4.09067Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 </span>
-            <span>+994 55 771 12 25</span>
+            <a href="tel:+994 55 771 12 25">+994 55 771 12 25</a>
         </p>
        
         <p>  <span><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,12 +53,12 @@ const contact = () => {
                 </svg>
                 </span>
           
-         <span> +994 50 610 00 17</span></p>
+         <a href="tel:+994 50 610 00 17"> +994 50 610 00 17</a></p>
 
         <p><span><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.73791 4.09067C2.13332 3.43598 4.31187 1.05471 5.86652 1.12659C6.33125 1.1651 6.74205 1.44624 7.07583 1.7723C7.84224 2.5207 10.0362 5.35127 10.1607 5.94691C10.4637 7.40776 8.72291 8.24987 9.25567 9.72228C10.6139 13.0458 12.9542 15.386 16.2792 16.7429C17.7504 17.2756 18.5925 15.5349 20.0535 15.8391C20.6479 15.9637 23.4799 18.1575 24.2283 18.9239C24.5531 19.2564 24.8355 19.6684 24.874 20.1331C24.9318 21.7699 22.4028 23.9791 21.9098 24.2615C20.7467 25.0934 19.2293 25.0793 17.3794 24.2192C12.2173 22.0715 3.96782 13.9778 1.78028 8.62087C0.943261 6.78132 0.885491 5.25371 1.73791 4.09067Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                </span><span>+994 77 251 55 55</span></p>
+                </span><a href="tel:+994 77 251 55 55">+994 77 251 55 55</a></p>
     </div>
  </div>
  <div className={Style.imageDivMobile}>
@@ -71,7 +71,7 @@ const contact = () => {
 </div>
 
  <div >
- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1519.3254061955283!2d49.92692787200793!3d40.39443111411448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403063238be19485%3A0xa66f290025d0c6c5!2z0J3QuNC30LDQvNC40L3RgdC60LjQuSDRgNCw0LnQvtC9LCDQkdCw0LrRgywg0JDQt9C10YDQsdCw0LnQtNC20LDQvQ!5e0!3m2!1sru!2s!4v1622743622828!5m2!1sru!2s" width="95%" height="286" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1519.3254061955283!2d49.92692787200793!3d40.39443111411448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403063238be19485%3A0xa66f290025d0c6c5!2z0J3QuNC30LDQvNC40L3RgdC60LjQuSDRgNCw0LnQvtC9LCDQkdCw0LrRgywg0JDQt9C10YDQsdCw0LnQtNC20LDQvQ!5e0!3m2!1sru!2s!4v1622743622828!5m2!1sru!2s" width="100%" height="286" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
  </div>
 </div>
 

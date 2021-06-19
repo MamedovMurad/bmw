@@ -133,20 +133,12 @@ let nextSlider= data.data.length-1;
 
 <div className={styles.homeTitle}>
     <h3>
-      <span><svg width="65" height="31" viewBox="0 0 65 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 31H33L16 0H0L16 31Z" fill="#017BEA"/>
-      <path d="M32 31H49L32 0H16L32 31Z" fill="#512DAB"/>
-      <path d="M48 31H65L48 0H32L48 31Z" fill="#F60100"/>
-      </svg>
+      <span> <img src="../uploads/bmw.svg" width={60} alt=""/>
       </span>
 
       <span><span>BMW</span> 3-cü seriya</span>
 
-      <span><svg width="65" height="31" viewBox="0 0 65 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 0H33L16 31H0L16 0Z" fill="#017BEA"/>
-      <path d="M32 0H49L32 31H16L32 0Z" fill="#512DAB"/>
-      <path d="M48 0H65L48 31H32L48 0Z" fill="#F60100"/>
-      </svg>
+      <span> <img src="../uploads/bmw.svg" width={60} alt=""/>
       </span>
     </h3>
 
@@ -175,21 +167,11 @@ let nextSlider= data.data.length-1;
 <div className={styles.categories}>
 <div className={styles.homeTitle}>
     <h3>
-      <span><svg width="65" height="31" viewBox="0 0 65 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 31H33L16 0H0L16 31Z" fill="#017BEA"/>
-      <path d="M32 31H49L32 0H16L32 31Z" fill="#512DAB"/>
-      <path d="M48 31H65L48 0H32L48 31Z" fill="#F60100"/>
-      </svg>
-      </span>
+ <span>   <img src="../uploads/bmw.svg" width={60} alt=""/></span>
 
       <span> <span>BMW</span> 5-ci seriya</span>
 
-      <span><svg width="65" height="31" viewBox="0 0 65 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 0H33L16 31H0L16 0Z" fill="#017BEA"/>
-      <path d="M32 0H49L32 31H16L32 0Z" fill="#512DAB"/>
-      <path d="M48 0H65L48 31H32L48 0Z" fill="#F60100"/>
-      </svg>
-      </span>
+<span>  <img src="../uploads/bmw.svg" width={60} alt=""/></span>
     </h3>
 
   
@@ -214,12 +196,14 @@ let nextSlider= data.data.length-1;
 
 
 <div className={styles.lastBanner}>
+<div className={styles.overlay}></div>
  <p>
  BMW İŞLƏNMİŞ EHTİYYAT HİSSƏLƏRİ <br/>
  Whatsapp'la Sifariş Edin
  </p>
 
    <div className={styles.lastBannerLink}>
+
                 <Link href="/contact">
                   <a>Əlaqə</a>
                   </Link>
@@ -253,20 +237,12 @@ let nextSlider= data.data.length-1;
 <div className="custom_wrapper">
 <div className={styles.homeTitle}>
     <h3>
-      <span><svg width="65" height="31" viewBox="0 0 65 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 31H33L16 0H0L16 31Z" fill="#017BEA"/>
-      <path d="M32 31H49L32 0H16L32 31Z" fill="#512DAB"/>
-      <path d="M48 31H65L48 0H32L48 31Z" fill="#F60100"/>
-      </svg>
+      <span> <img src="../uploads/bmw.svg" width={60} alt=""/>
       </span>
 
       <span><span>BMW</span> 7-ci seriya</span>
 
-      <span><svg width="65" height="31" viewBox="0 0 65 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 0H33L16 31H0L16 0Z" fill="#017BEA"/>
-      <path d="M32 0H49L32 31H16L32 0Z" fill="#512DAB"/>
-      <path d="M48 0H65L48 31H32L48 0Z" fill="#F60100"/>
-      </svg>
+      <span> <img src="../uploads/bmw.svg" width={60} alt=""/>
       </span>
     </h3>
 

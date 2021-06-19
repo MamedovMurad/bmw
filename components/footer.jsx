@@ -11,22 +11,22 @@ const Footer = () => {
                 </Link>
                 </li>
                 <li>
-                <Link href="/">
+                <Link href="/Katalog">
                 <a>Kataloq</a>
                 </Link>
                 </li>
                 <li>
-                <Link href="/">
+                <Link href="/avtomobiller">
                 <a>Avtomobillər</a>
                 </Link>
                 </li>
                 <li>
-                <Link href="/">
+                <Link href="/nece-almaq">
                 <a>Necə almaq</a>
                 </Link>
                 </li>
                 <li>
-                <Link href="/">
+                <Link href="/contact">
                 <a>Əlaqə</a>
                 </Link>
                 </li>
@@ -54,7 +54,7 @@ const Footer = () => {
                 </li>
             </ul>
             <p><span>© Bmwpartsbaku.az. Müəllif Hüquqları Qorunur.</span>
-           <a href="https://jedai.az/az"><span>Site by  <img src="/uploads/jedai.png" style={{marginLeft:"10px"}} alt="" /></span></a> 
+           <a href="https://jedai.az/az" target="_blank"><span>Site by  <img src="/uploads/jedai.png" style={{marginLeft:"10px"}} alt="" /></span></a> 
             </p>
         </div>
     )
