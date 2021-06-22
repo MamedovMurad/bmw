@@ -12,7 +12,7 @@ const Cars = (cars) => {
   const [modalIndex, setModalIndex] = useState(0);
   const [imagesIndex, setimagesIndex] = useState(0);
  const getData = async()=>{
-  const res = await fetch('https://bmwpartsbaku.az/public/api/car')
+  const res = await fetch('https://admin.bmwpartsbaku.az/public/api/car')
   const cars= await res.json();
 
  setdata(cars);
@@ -61,7 +61,7 @@ const Cars = (cars) => {
    { data.length>0 &&  
    
 
- <img className={Style.img__custom} src={"https://bmwpartsbaku.az/"+data[modalIndex].images[imagesIndex].name} alt="" width="100%" height="500px" style={{objectFit:"cover"}}/> 
+ <img className={Style.img__custom} src={"https://admin.bmwpartsbaku.az/"+data[modalIndex].images[imagesIndex].name} alt="" width="100%" height="500px" style={{objectFit:"cover"}}/> 
   
   
    

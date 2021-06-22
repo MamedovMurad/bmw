@@ -21,7 +21,7 @@ const [state, setstate] = useState(router.id)
 }
 export const getServerSideProps = async ({params:{id}}) => {
  
-  const res = await fetch(`https://bmwpartsbaku.az/public/api/products/${id}`)
+  const res = await fetch(`https://admin.bmwpartsbaku.az/public/api/products/${id}`)
   const data  = await res.json()
 
   return {

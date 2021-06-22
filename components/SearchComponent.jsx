@@ -16,7 +16,7 @@ function SearchComponent() {
 const  handleSeria = async(value)=>{
 
     setsearch({...search,seria:value});
-    const res = await fetch(`https://bmwpartsbaku.az/api/kuzov/${value}`)
+    const res = await fetch(`https://admin.bmwpartsbaku.az/api/kuzov/${value}`)
     const product= await res.json();
   
     setallKuzov(product);
@@ -32,14 +32,14 @@ const handleKuza= async(value)=>{
   }
 
   const getSeria= async()=>{
-    const res = await fetch('https://bmwpartsbaku.az/public/api/seriya')
+    const res = await fetch('https://admin.bmwpartsbaku.az/public/api/seriya')
     const product= await res.json();
   
     setallSeria(product);
   }
 
   const getCate= async()=>{
-    const res = await fetch('https://bmwpartsbaku.az/public/api/category')
+    const res = await fetch('https://admin.bmwpartsbaku.az/public/api/category')
     const product= await res.json();
   
     setallCate(product);

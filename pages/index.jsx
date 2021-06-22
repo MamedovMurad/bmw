@@ -19,7 +19,7 @@ const Home=(data) =>{
   const [sevenSeria, setsevenSeria] = useState([])
 
 const getthirdSeria= async()=>{
-  const res = await fetch('https://bmwpartsbaku.az/public/api/products/seriya/1')
+  const res = await fetch('https://admin.bmwpartsbaku.az/public/api/products/seriya/1')
   const product= await res.json();
   setthirtSeria(product);
 
@@ -27,7 +27,7 @@ const getthirdSeria= async()=>{
 
 
 const getfivetSeria= async()=>{
-  const res = await fetch('https://bmwpartsbaku.az/public/api/products/seriya/3')
+  const res = await fetch('https://admin.bmwpartsbaku.az/public/api/products/seriya/3')
   const product= await res.json();
 
   setfiveSeria(product);
@@ -35,7 +35,7 @@ const getfivetSeria= async()=>{
 
 
 const getsevenSeria= async()=>{
-  const res = await fetch('https://bmwpartsbaku.az/public/api/products/seriya/4')
+  const res = await fetch('https://admin.bmwpartsbaku.az/public/api/products/seriya/4')
   const product= await res.json();
 
   setsevenSeria(product);
@@ -93,7 +93,7 @@ let nextSlider= data.data.length-1;
     </div>
 
   {data.data.map((e,index)=>(
- <img  key={index} src={'https://bmwpartsbaku.az/'+e.pc_iage}  
+ <img  key={index} src={'https://admin.bmwpartsbaku.az/'+e.pc_iage}  
  className={index==slider?styles.activeSlider:styles.deactiveSlider}/>
     ))}
  
@@ -271,7 +271,7 @@ let nextSlider= data.data.length-1;
 
 
 export const getServerSideProps = async () => {
-  const res = await fetch('https://bmwpartsbaku.az/api/slider')
+  const res = await fetch('https://admin.bmwpartsbaku.az/api/slider')
   const data  = await res.json()
 
   return {

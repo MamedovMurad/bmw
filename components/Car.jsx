@@ -9,14 +9,14 @@ const Car = ({kuza,setvis,setModalIndex, index}) => {
     const [lang, setlang] = useContext(Context);
     moment.locale(lang)
     function image(){
-        return  `https://bmwpartsbaku.az/public/${kuza.mainimage}`
+        return  `https://admin.bmwpartsbaku.az/public/${kuza.mainimage}`
     }
     return (
   <>
             <div onClick={()=>{setvis(true),setModalIndex(index)}}>
             <div className={Style.imageCars}>
             <img 
-                    src={`https://bmwpartsbaku.az/public/${kuza.mainimage}`}
+                    src={`https://admin.bmwpartsbaku.az/public/${kuza.mainimage}`}
                     alt="Picture of the author"
                     height='201'
                     width= "350.35"

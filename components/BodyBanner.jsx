@@ -48,7 +48,7 @@ function isEmpty(obj) {
 
       const paginationChange = async(page,pagesize)=>{
         if(router.pathname!='/search'){
-        const   url=`https://bmwpartsbaku.az/api/products?page=${page}`
+        const   url=`https://admin.bmwpartsbaku.az/api/products?page=${page}`
         const res = await fetch(url);           
         const product= await res.json();
       
@@ -57,7 +57,7 @@ function isEmpty(obj) {
           console.log(page,pagesize);
       }else{
 
-        const  url=`https://bmwpartsbaku.az/api/search?category_id=${router.query.category_id}&kuzov_id=${router.query.kuzov_id}&seriya_id=${router.query.seriya_id}&page=${page}`
+        const  url=`https://admin.bmwpartsbaku.az/api/search?category_id=${router.query.category_id}&kuzov_id=${router.query.kuzov_id}&seriya_id=${router.query.seriya_id}&page=${page}`
         const res = await fetch(url);           
         const product= await res.json();
        

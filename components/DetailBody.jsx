@@ -6,7 +6,7 @@ import Style from '../styles/DetailBody.module.css'
 import { Context } from "../context/Context";
 const DetailBody = ({data}) => {
     const [context, setContext] = useContext(Context);
-const [slider, setSlider] = useState(`https://bmwpartsbaku.az/${data.mainimage}`)
+const [slider, setSlider] = useState(`https://admin.bmwpartsbaku.az/${data.mainimage}`)
 const [customdata, setcustomdata] = useState(null)
 const status={
     status_good_az:'Əla',
@@ -54,8 +54,8 @@ const responsive = {
 
                 <ul>
                      {data.images.map((item,index)=>(
-                    <li className={Style.desktopCarousel} key={index} onClick={()=>{setSlider(`http://bmwpartsbaku.az/${item.title}`)}}>
-                        <img src={`http://bmwpartsbaku.az/${item.title}`} alt=""/>
+                    <li className={Style.desktopCarousel} key={index} onClick={()=>{setSlider(`http://admin.bmwpartsbaku.az/${item.title}`)}}>
+                        <img src={`http://admin.bmwpartsbaku.az/${item.title}`} alt=""/>
                    </li>
                     ))} 
                

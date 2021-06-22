@@ -8,7 +8,7 @@ const HomeWrapper = () => {
     const [allSeria, setallSeria] = useState([]);
     const [anime, setanime] = useState();
     const getSeria= async()=>{
-        const res = await fetch('https://bmwpartsbaku.az/public/api/seriya')
+        const res = await fetch('https://admin.bmwpartsbaku.az/public/api/seriya')
         const product= await res.json();
       
         setallSeria(product);
