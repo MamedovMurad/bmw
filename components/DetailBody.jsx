@@ -92,6 +92,7 @@ const responsive = {
             </div>
           </div>
         <div className={Style.relationData} >
+          <h1>Oxşar Məhsullar</h1>
         <Carousel responsive={responsive}>
             {data.related.map((data,index)=>(
               <div><BmwPartsCard key={index} data={data}/></div>

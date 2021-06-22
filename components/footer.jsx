@@ -1,10 +1,38 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Style from '../styles/Footer.module.css'
 import Link from 'next/link'
 const Footer = () => {
+    const [toTop, setToTop] = useState(false);
+    const customScrol = () => {
+        if (typeof window !== 'undefined') {
+
+       
+
+            if(window.pageYOffset>400){
+                setToTop(true)
+               }
+               else{
+                   setToTop(false)
+               }
+        }
+       
+    }
+    const scrollTop = ()=>{
+   
+            window.scrollTo({top:0,behavior:"smooth"})
+        
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', customScrol);
+        return () => window.removeEventListener('scroll', customScrol);
+      });
+
     return (
         <div className={Style.footerArea}>
-            <ul className={Style.footerFirstLine}>
+         { toTop&& <div className={Style.ScrollToTop} onClick={scrollTop}>   </div>}  
+              
+          
+            <div className={Style.footerFirstLine}>
                 <li>
                 <Link href="/">
                 <a>Əsas səhifə</a>
@@ -31,7 +59,7 @@ const Footer = () => {
                 </Link>
                 </li>
                 
-            </ul>
+            </div>
 
 
 

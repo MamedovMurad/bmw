@@ -1,14 +1,45 @@
 .footerArea {
+    position: relative;
     width: 100%;
     background-color: #512DAB;
+}
+
+.ScrollToTop {
+    z-index: 7;
+    border-radius: 4px;
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+    width: 40px;
+    height: 40px;
+    background-color: #214C94;
+}
+
+.ScrollToTop::after {
+    transition: top .3s;
+    position: absolute;
+    content: "";
+    border-style: solid;
+    display: inline-block;
+    border-width: 10px;
+    top: 5px;
+    left: 10px;
+    border-color: transparent transparent white transparent;
+}
+
+.ScrollToTop:hover::after {
+    top: 0px;
 }
 
 .footerArea>p>span {
     display: block;
 }
+
 .footerArea>p img {
-width: 150px;
+    width: 150px;
 }
+
 .footerArea>p {
     border-top: 2px dashed white;
     display: flex;
@@ -26,9 +57,22 @@ width: 150px;
     color: white;
     list-style: none;
 }
-.footerArea>p a{
+
+div.footerFirstLine>li::after {
+    content: "";
+    right: -30px;
+    top: 4px;
+    position: absolute;
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.footerArea>p a {
     color: white;
 }
+
 .footerFirstLine>li>a,
 .footerFirstLine>li>span {
     display: inline-block;
@@ -36,6 +80,7 @@ width: 150px;
 }
 
 .footerFirstLine>li {
+    position: relative;
     margin-left: 70px;
     margin-top: 44px;
 }
@@ -47,7 +92,7 @@ width: 150px;
 
 .footerFirstLine>li>a,
 .footerFirstLine>li>span,
-.footerArea>p{
+.footerArea>p {
     font-size: 17px;
     color: white;
     text-decoration: none;
@@ -62,11 +107,14 @@ width: 150px;
 /* mobile versia */
 
 @media only screen and (max-width: 900px) {
+    div.footerFirstLine>li::after {
+        display: none;
+    }
     .footerArea {
         padding: 10px 0;
         height: inherit;
     }
-    .footerArea>ul{
+    .footerArea>ul {
         width: 80%;
         margin: 0 auto;
         border-bottom: 1px dashed #ffffff;
@@ -76,14 +124,12 @@ width: 150px;
         display: block;
     }
     .footerFirstLine>li {
-       
         text-align: center;
         margin: 0;
         padding: 18px 0;
         margin-top: 0;
     }
     .footerArea>p {
-       
         border: none;
         margin-top: 5px;
         padding-left: 10px;
@@ -91,7 +137,7 @@ width: 150px;
         font-size: 16px;
         padding-top: 17px;
     }
-    .footerArea>p a{
+    .footerArea>p a {
         color: white;
     }
     .footerArea>p img {

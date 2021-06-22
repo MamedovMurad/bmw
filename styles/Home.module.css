@@ -208,7 +208,7 @@
     font-family: MarkPro;
     font-style: normal;
     font-weight: 450;
-    font-size: 72px;
+    font-size: 48px;
     line-height: 91px;
     color: #FFFFFF;
 }
@@ -221,10 +221,9 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-
-  
 }
-.lastBanner>.overlay{
+
+.lastBanner>.overlay {
     z-index: 0;
     position: absolute;
     top: 0;
@@ -233,6 +232,7 @@
     height: 413px;
     width: 100%;
 }
+
 .lasbannerParent {
     margin: 80px 0;
 }
@@ -302,7 +302,6 @@
         color: #FFFFFF;
     }
     .lastBanner .lastBannerLink {
-       
         position: absolute;
         bottom: 31px;
         left: 30%;
@@ -312,7 +311,6 @@
         right: 0;
         margin: 0 auto;
         left: 0;
-      
     }
     .title {
         top: 133px;
@@ -351,7 +349,7 @@
         display: inline-block;
     }
     .katalogParent {
-        padding: 0 ;
+        padding: 0;
         display: block;
     }
     .katalogs {
@@ -366,56 +364,47 @@
     .activeSlider {
         animation: mySLiderDeactive 1.3s forwards;
     }
-    .LinkHome>a{
-
-border-radius: 5px;
+    .LinkHome>a {
+        border-radius: 5px;
     }
 }
 
 @media only screen and (max-width: 900px) and (min-width:700px) {
     .lastBanner>p {
         font-size: 53px;
-top: 13px;
-left: 14%;
+        top: 13px;
+        left: 14%;
     }
-    .LinkHome>a{
-
+    .LinkHome>a {
         border-radius: 5px;
-            }
-            .activeSlider {
-                animation: mySLiderDeactive 1.3s forwards;
-            }
+    }
+    .activeSlider {
+        animation: mySLiderDeactive 1.3s forwards;
+    }
     .title {
         font-size: 48px;
         top: 233px;
         width: 55%;
         left: 9px;
-      
     }
     .sliderClick {
         display: none !important;
     }
     .sliderToCatalog {
         bottom: 170px;
-left: 10px;
+        left: 10px;
     }
-
     .katalogParent {
         width: 100%;
-     justify-content: center;
+        justify-content: center;
         display: flex;
         flex-wrap: wrap;
     }
     .lastBanner>.animeWp {
-  
         bottom: 22px;
         right: 20%;
-      
-  
-      
     }
     .lastBanner .lastBannerLink {
-bottom: 25px;
-
+        bottom: 25px;
     }
 }

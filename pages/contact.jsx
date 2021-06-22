@@ -3,11 +3,17 @@ import Layout from '../components/Layout'
 import BodyImage from '../components/BodyImage'
 import Style from '../styles/Contact.module.css'
 import Image from 'next/image'
+import Head from 'next/head'
 import { DatePicker } from 'antd';
 
 const contact = () => {
     return (
+      
         <Layout>
+               <Head>
+        <title>Əlaqə</title>
+     
+      </Head>
           <BodyImage title="Əlaqə"/>
           
           <div className="custom_wrapper">

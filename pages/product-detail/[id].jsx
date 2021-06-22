@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import Head from 'next/head'
 import BodyImage from '../../components/BodyImage'
 import DetailBody from '../../components/DetailBody'
 import Layout from '../../components/Layout'
@@ -8,6 +9,10 @@ const Detail = ({data}) => {
 const [state, setstate] = useState(router.id)
     return (
       <Layout>
+                                       <Head>
+        <title>{data.title_az}</title>
+     
+      </Head>
           <BodyImage title={data.title_az}/>
             <DetailBody data={data}/>
       </Layout>
