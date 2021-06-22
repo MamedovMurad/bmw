@@ -10,7 +10,7 @@ const BmwPartsCard = ({data}) => {
         <Link href={`/product-detail/${data.id}`}>
         <a className={Style.links}> 
         <div className={Style.partCards} >
-        <div style={{background:`url(https://bmwpartsbaku.az/public/${data.mainimage})`}}>
+        <div style={{background:`url(https://admin.bmwpartsbaku.az//${data.mainimage})`}}>
             
         </div>
                      <div>

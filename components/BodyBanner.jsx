@@ -26,7 +26,7 @@ function isEmpty(obj) {
 
        if(router.pathname=='/search'){
         useEffect(async ()=> {
-            const  url=`https://bmwpartsbaku.az/api/search?category_id=${router.query.category_id}&kuzov_id=${router.query.kuzov_id}&seriya_id=${router.query.seriya_id}`
+            const  url=`https://admin.bmwpartsbaku.az/api/search?category_id=${router.query.category_id}&kuzov_id=${router.query.kuzov_id}&seriya_id=${router.query.seriya_id}`
             const res = await fetch(url);           
             const product= await res.json();
             setspin(1);
@@ -35,7 +35,7 @@ function isEmpty(obj) {
         },[router.query]) 
         }else{
             useEffect(async ()=> {
-                const   url=`https://bmwpartsbaku.az/api/products`
+                const   url=`https://admin.bmwpartsbaku.az/api/products`
                 const res = await fetch(url);           
                 const product= await res.json();
                 setspin(1);
